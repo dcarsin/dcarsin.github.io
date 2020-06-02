@@ -5,18 +5,76 @@ body {
     font-family: 'Courier New', Courier, monospace;
   }
   
-  /* Activity 1 styles */
   .content1 {
     display: grid;
     width: 600px;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
   
+  .content2 {
+    position: relative;
+    height: 600px;
+  }
+
+  .content3 {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .content4 {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .content5 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+  }
+
+.red1, .red2, .red3, .red4, .red5, .red6 {background-color: red;}
+.blue1, .blue2, .blue3, .blue4, .blue5, .blue6 {background-color: blue;}
+.gold1, .gold2, .gold3, .gold4, .gold5, .gold6 {background-color: gold;}
+.green1, .green2, .green3, .green4, .green5, .green6 {background-color: green;}
+
+.red2{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100px;
+  height: 100px;
+}
+.green2{
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  width: 100px;
+  height: 100px;
+}
+
+.gold2{
+  position: absolute;
+  top: 105px;
+  left: 105px;
+  width: 100px;
+  height: 100px;
+}
+
+.blue2{
+  position: absolute;
+  top: 155px;
+  left: 155px;
+  width: 100px;
+  height: 100px;
+}
   .red1 {
     width: 100%;
-    height: 100px;
-    background-color: red;
+    height: 100px;    
     grid-column: 1/3;
   }
   
@@ -25,7 +83,6 @@ body {
     height: 200px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: green;
   }
   
   .gold1 {
@@ -33,12 +90,116 @@ body {
     height: 200px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: gold;
   }
   
   .blue1 {
     width: 100%;
     height: 100px;
-    background-color: blue;
     grid-column: 1/3;
+  }
+
+  .red3 {
+    width: 100%;
+    height: 100px;    
+    grid-column: 1/3;
+  }
+  
+  .green3 {
+    width: 280px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  
+  .gold3 {
+    width: 280px;
+    height: 200px;
+    margin-left: 40px;
+  }
+  
+  .blue3 {
+    width: 100%;
+    height: 100px;
+    grid-column: 1/3;
+  }
+  .red4 {
+    width: 300px;
+    height: 300px;    
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  
+  .green4 {
+    width: 300px;
+    height: 100px;    
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .gold4 {
+    width: 300px;
+    height: 100px;    
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  .blue4 {
+    width: 300px;
+    height: 100px;    
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  
+  .red5 {
+    width: 600px;
+    height: 100px;    
+  }
+  
+  .green5 {
+    width: 200px;
+    height: 200px;    
+    float: left;
+  }
+  
+  .gold5 {    
+    width: 600px;
+    height: 400px;    
+  }
+  
+  .blue5 {
+    width: 600px;
+    height: 100px; 
+  }
+
+  .red6 {
+    position: absolute;
+    width: 500px;
+    height: 200px;    
+    top: 105px;
+    left: 105px;
+    z-index: -1;
+  }
+  
+  .green6 {
+    position: absolute;
+    width: 200px;
+    height: 200px;   
+    top: 605px;
+    left: 105px;
+  }
+  
+  .gold6 {    
+    position: absolute;
+    width: 200px;
+    height: 500px;    
+    top: 305px;
+    left: 605px;
+  }
+  
+  .blue6 {
+    position: absolute;
+    width: 500px;
+    height: 500px; 
+    top: 205px;
+    left: 205px;
+    z-index: -1;
   }
