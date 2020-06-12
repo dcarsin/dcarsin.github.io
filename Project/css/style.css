@@ -14,6 +14,7 @@ body{
 }
 h1 {
   text-shadow: 2px 2px 5px red;
+  color: rgb(128, 255, 128);
 }
 h3 {
   text-align: center;
@@ -23,7 +24,7 @@ header {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  grid-template-rows: 1  ;
+  grid-template-rows: 1fr  ;
     padding: 0.5% 0%;
     width: auto;
     margin: auto;
@@ -65,7 +66,7 @@ header ul {
   }
   
   .active {
-    background-color:rgb(6D326D);
+    background-color: rgb(109, 50, 109);
   }
 
   #logoAndOptions {
