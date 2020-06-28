@@ -27,7 +27,7 @@ header {
     padding: 0.5% 0%;
     width: auto;
     margin: auto;
-    background-color: rgb(42, 68, 148);
+    background-color: rgb(21, 48, 12);
     /* border-radius: 1rem;         */
     /* display: flex; 
     justify-content: space-evenly; */
@@ -65,7 +65,7 @@ header ul {
   }
   
   .active {
-    background-color: rgb(109, 50, 109);
+    background-color: rgb(21, 48, 12);
   }
 
   #logoAndOptions {
@@ -108,7 +108,7 @@ section {
 
 footer section {  
   color: aqua;
-    background-color: rgb(42, 68, 148);
+    background-color: rgb(21, 48, 12);
 }
 footer > ul{
   background-color: rgb(23, 69, 90);
