@@ -36,7 +36,7 @@ header {
     justify-items: center;
   }
 
-#body2parts{
+#body2parts, #body2parts2{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
