@@ -40,6 +40,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+#picChanges, #listAmenities{
+  align-items: center;
+  justify-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 header ul {
     list-style-type: none;
     margin: 0;

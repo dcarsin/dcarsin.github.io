@@ -2,82 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="dcarsin project for The Temple Inn & Suites is a hotel near temple locations of The Church around the world, providing specialized services and accommodations.">
-    <title>Temple Inn & Suites</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="dcarsin project for The Temple Inn & Suites is a hotel near temple locations of The Church around the world, providing specialized services and accommodations.">
+	<title>Temple Inn & Suites</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div id="logoPic">
-            <img src="images/TempleRest.png" alt="Temple Inn and Suites Logo">
-        </div>
-        <h1>Temple Inn & Suites</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="#">Amenities</a></li>
-                <li><a href="temple.html">Temple Spotlight</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="mainTemplePic">
-            <img src="images/4083715325_TkJB8pW-XL.jpg" alt="Temple panoramic view pic">
-        </div>
-        <section id="body2parts">
-            <div>
-                <h3>Your Home Away from Home</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
-                    nobis incidunt, illo aliquid deserunt dicta quo, in sapienteLorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
-                    nobis incidunt, illo aliquid deserunt dicta quo, in sapiente vero cum quLorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
-                    nobis incidunt, illo aliquid deserunt dicta quoLorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
-                    nobis incidunt, illo aliquid deserunt dicta quo, in sapiente vero cum qu, in sapiente Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
-                    nobis incidunt, illo aliquid deserunt dicta quo, in sapiente vero cum quvero cum qu vero cum quisquam facere impedit animi?
-                </p>            
-            </div>            
-        <img src="images/room-4656344_960_720.jpg" alt="Temple picture">
-        </section>
-        <section id="body2parts">
-            <img src="images/vip-dinner-set-menu.jpg" alt="Temple picture">
-            <div>
-            <h3>Wedding Receptions</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint accusantium velit modi, optio
-                incidunt maiores accusamus asperiores error reprehenderit excepturi, enim illum itaque saepe, quae
-                molestiae eum consequatur cumque. </p>
-            </div>
-        </section>
-        <section>
-            <h3>Family Search Center</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at veritatis eaque consequatur, non
-                inventore dicta, aliquid assumenda ad delectus a doloremque culpa ducimus obcaecati. Ab eum maxime
-                dignissimos cupiditatepsum dolor sit amet consectetur adipisicing elit. Porro at veritatis eaque consequatur, non
-                inventore dicta, aliquid a!
-            </p>
-        </section>
-    </main>
-    <footer>
-        <section id="footerSection">
-            <ul>
-                <li><a href="">Temple Inn & Suites Headquarters</a></li>
-                <li><a href="">355 Wisconsin Avenue</a></li>
-                <li><a href="">Bethesda, MD 20814</a></li>
-                <li><a href="">215-829-9999</a></li>
-                <li><a href="">info@templeinn.com</a></li>
-            </ul>
-            <div class="social">
-                <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="Facebook link"
-                        width="50px"></a>
-                <a href="https://twitter.com/"><img src="images/Twitter.png" alt="Twitter link" width="50px"></a>
-                <a href="https://www.instagram.com/"><img src="images/Instagram_logo.png" alt="Instagram link"
-                        width="50px"></a>
-          <p>Copyrights Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | David Carsin<br></p>
-                    </section>
-    </footer>
+	<header>
+		<div id="logoPic">
+			<img src="images/TempleRest.png" alt="Temple Inn and Suites Logo">
+		</div>
+		<h1>Temple Inn & Suites</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="#">Amenities</a></li>
+				<li><a href="temple.html">Temple Spotlight</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="mainTemplePic">
+			<img src="images/4083715325_TkJB8pW-XL.jpg" alt="Temple panoramic view pic">
+		</div>
+		<section id="picChanges">
+			<script>
+				var imageSources = ["images/gym.jpg", "images/pool.jpg"]
+				var index = 0;
+				setInterval(function () {
+					if (index === imageSources.length) {
+						index = 0;
+					}
+					document.getElementById("imageToChange").src = imageSources[index];
+					index++;
+				}, 3000);
+
+			</script>
+			<img id="imageToChange" src="images/pool.jpg" alt="Amenities pic samples">
+		</section>
+		<section id="listAmenities">
+			<div>
+				<h3>List of free amenities offered by Hotel</h3>
+				<ul>
+					<li>Breakfast</li>
+					<li>Exercise/workout room</li>
+					<li>Indoor pool</li>
+					<li>Wifi high-speed internet access and smart TVs</li>
+					<li>Parking</li>
+					<li>Temple shuttle</li>
+					<li>Family history consultation and family ordinance card</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section id="footerSection">
+			<ul>
+				<li><a href="">Temple Inn & Suites Headquarters</a></li>
+				<li><a href="">355 Wisconsin Avenue</a></li>
+				<li><a href="">Bethesda, MD 20814</a></li>
+				<li><a href="">215-829-9999</a></li>
+				<li><a href="">info@templeinn.com</a></li>
+			</ul>
+			<div class="social">
+				<a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="Facebook link"
+						width="50px"></a>
+				<a href="https://twitter.com/"><img src="images/Twitter.png" alt="Twitter link" width="50px"></a>
+				<a href="https://www.instagram.com/"><img src="images/Instagram_logo.png" alt="Instagram link"
+						width="50px"></a>
+				<p>Copyrights Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | David
+					Carsin<br></p>
+		</section>
+	</footer>
 </body>
 
 </html>
