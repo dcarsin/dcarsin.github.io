@@ -123,23 +123,26 @@ header, main, footer {
     padding: 10px;
   }
   
-#button, #orderList{
-  background-color: #222222; /* Green */
+.orderList{
+  padding: 0 10px 0 10px;
+  background-color: #222222; 
+  border-radius: 5px;
   border: #ECD929;
   color: #ECD929;
   text-align: center;
-  border-radius: 5px;
-  padding: 0 10px 0 10px;
 }
 
 #button {
+  background-color: #222222; 
+  text-align: center;
   border-radius: 12px;
   margin: 4px 2px;
   grid-column: 2/3;
   width: 100%;
-  padding: 15px 32px;
+  padding: 10px 32px;
   font-size: 20px;
-  fon
+  border: #ECD929;
+  color: #ECD929;
 }
 
   section {
@@ -156,7 +159,10 @@ header, main, footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  #footerSection ul img {
+  .social img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
     width: 15px;
     padding: 1px 10px 0 0;
     height: auto;
@@ -164,16 +170,24 @@ header, main, footer {
   
   footer section {  
     color: rgb(137, 210,220);
-      background-color: rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
   }
-  footer > ul{
-    background-color: rgb(23, 69, 90);
-  }  
-  footer > ul a{
-    background-color: rgb(23, 69, 90);
-  }  
+
+  #botonPart{    
+    grid-column: 1/2;
+    grid-row: 1/2;    
+  }
+
+  #botonPart img{
+  width: 15px;
+  padding: 1px 10px 0 0;
+  height: auto;
+}
+
   .social{
-      text-align: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
   }
   
   .social img{

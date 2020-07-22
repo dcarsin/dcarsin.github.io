@@ -4,22 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quesos Hnos.</title>
-</head>
-
-<body>
-
-
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dcarsin FINAL Project">
     <title>Quesos Hnos.</title>
     <link rel="stylesheet" href="css/style.css">
@@ -46,11 +30,11 @@
                     <!-- cheese Type 1 -->
                     <div class="product">`
                         <img src="images/danbo.jpg" alt="Danbo Cheese">
-                        <div id="CheeseName">Danbo Cheese - $310</div>
+                        <div class="CheeseName">Danbo Cheese - $310</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="danbo">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -64,11 +48,11 @@
                     <!-- cheese Type 2 -->
                     <div class="product">
                         <img src="images/blue.jpg" alt="Blue Cheese">
-                        <div id="CheeseName">Blue Cheese - $450</div>
+                        <div class="CheeseName">Blue Cheese - $450</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="blue">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -82,11 +66,11 @@
                     <!-- cheese Type 3 -->
                     <div class="product">
                         <img src="images/colonia.jpg" alt="Colonia Cheese">
-                        <div id="CheeseName">Colonia Cheese - $380</div>
+                        <div class="CheeseName">Colonia Cheese - $380</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="colonia">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -100,11 +84,11 @@
                     <!-- cheese Type 4 -->
                     <div class="product">
                         <img src="images/magro.jpg" alt="Low Fat Cheese">
-                        <div id="CheeseName">Low Fat Cheese - $340</div>
+                        <div class="CheeseName">Low Fat Cheese - $340</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="lowfat">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -118,11 +102,11 @@
                     <!-- cheese Type 5 -->
                     <div class="product">
                         <img src="images/parmesano.jpg" alt="Parmesano Cheese">
-                        <div id="CheeseName">Parmesano Cheese - $410</div>
+                        <div class="CheeseName">Parmesano Cheese - $410</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="parmesano">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -136,11 +120,11 @@
                     <!-- cheese Type 6 -->
                     <div class="product">
                         <img src="images/cuartirolo.jpg" alt="Caurtirolo Cheese">
-                        <div id="CheeseName">Cuartirolo Cheese - $</div>
+                        <div class="CheeseName">Cuartirolo Cheese - $</div>
                         <table>
                             <tr>
                                 <td>Select weight:</td>
-                                <td><select id="orderList" name="orderList">
+                                <td><select class="orderList" name="cuartirolo">
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -151,21 +135,19 @@
                             </tr>
                         </table>
                     </div>
-                    <tr>
-                        <td><input id="button" type="button" value="Order now"></td>
-                    </tr>
-                    <form>
+                    <input id="button" type="button" value="Order now">
+                </form>
             </div>
         </div>
     </main>
     <footer>
-        <section id="footerSection">
-            <ul>
-                <a href="">QuesosHermanos.com</a><br>
-                <a href="">Ciudad de la Costa, Uruguay</a><br>
+        <section id="footerSection">            
+            <div id="botonPart">
+                <a href="https://dcarsin.github.io/FinalProject/index.html">QuesosHermanos.com</a><br>
+                <a href="https://www.google.es/maps/dir//Biarritz,+Ciudad+de+la+Costa,+Departamento+de+Canelones/@-34.842104,-55.9750884,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x959f8905c1c4f947:0xaa7cd9980800f4ec!2m2!1d-55.970711!2d-34.8421129!3e0">Ciudad de la Costa</a><br>
                 <img src="images/whatsapp-logo-5.png" alt="Whatsapp Logo"><a href="">+598 92040000</a><br>
                 <img src="images/email.png" alt="Email Logo"><a href="">pedidos@quesoshermanos.com</a><br>
-            </ul>
+            </div>
             <div class="social">
                 <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="Facebook link"
                         width="50"></a>
