@@ -4,44 +4,44 @@ header, main, footer {
   }
   
   html {
-    background-color:rgb(90, 87, 102)
+    background-color: #999
   }
   
   body{
       font-size: 16px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Lucida Bright", Helvetica, sans-serif;
   }
   h1 {
     /* text-shadow: 2px 2px 5px red; */
-    color:rgb(236, 217, 41)    ;
+    color:rgb(236, 217, 41);
   }
-  h3 {
+  h3 h4 {
     text-align: center;
   }
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
   
   header {
+    border-radius: 15px 15px 0 0;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    grid-template-rows: 1fr  ;
-      padding: 0.5% 0%;
-      width: auto;
-      margin: auto;
+    grid-template-rows: 1fr ;
       background-color: rgb(34, 34, 34);
-      /* border-radius: 1rem;         */
-      /* display: flex; 
-      justify-content: space-evenly; */
-      /* width: 600px; */
       align-items: center;
       justify-items: center;
+      padding: 10px;
     }
   
-  #body2parts, #body2parts2{
+  #body2parts {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   
-  #picChanges, #listAmenities{
+  #onePiece{
     align-items: center;
     justify-items: center;
   
@@ -50,6 +50,7 @@ header, main, footer {
   }
   
   header ul {
+    border-radius: 10px;
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -74,13 +75,33 @@ header, main, footer {
     }
     
     .active {
-      background-color: rgb(21, 48, 12);
+      background-color: rgb(56, 108, 11);
     }
   
     #logoAndOptions {
       width: 50px;
     }
+    .formIndex form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+    }
+    .product {
+      margin: 5px 5px 5px 5px;
+    }
+    form img{
+      border-radius: 15px;
+      width: 190px; 
+      height: 190px 
+
+    }
   
+    #fixedBox{
+      padding: 20px;
+      background-color:rgb(107, 129, 140);
+    }
   #mainTemplePic img{
     margin-left: auto;
     margin-right: auto;
@@ -88,11 +109,12 @@ header, main, footer {
   }
   
   header img {
-      width: 130px;
+      width: 100px;
       height: auto;
    }
   
   section img {
+    border-radius: 15px;
     margin: auto;
     width: 80%;
   }
@@ -103,21 +125,27 @@ header, main, footer {
   
   section {
     padding: 10px 20px 10px 20px;
-    border-style: solid;
-    border-color: red;
+    /* border-style: solid;
+    border-color: red; */
     border-width: 1px ; /* 20px top and bottom, 5px on the side
       padding: 5px;*/
   } 
   
   #footerSection {
+    border-radius: 0 0 15px 15px;
     display: grid;  
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
+  #footerSection ul img {
+    width: 15px;
+    padding: 1px 10px 0 0;
+    height: auto;
+  }
   
   footer section {  
     color: aqua;
-      background-color: rgb(21, 48, 12);
+      background-color: rgb(34, 34, 34);
   }
   footer > ul{
     background-color: rgb(23, 69, 90);
@@ -130,23 +158,14 @@ header, main, footer {
   }
   
   .social img{
-      width: 50px;
+      width: 40px;
       height: auto;
+      /* padding: 2px; */
   }
   footer p {
     grid-column: 1/3;
     grid-row: 2/3;
     text-align: center;
-  }
-  /*
-  main section p {
-      margin: .5rem;
-      background-color:darkgrey;
-      border: 1px solid #bbb;
-      padding: 5px;
-  }
-  a:link {
-    color: #FF0000;
   }
   /* visited link */
   a:visited {
@@ -155,7 +174,7 @@ header, main, footer {
   
   /* mouse over link */
   a:hover {
-    color:rgb(182, 42, 7);
+    color:rgb(227, 23, 10);
   }
   
   /* selected link */
@@ -172,3 +191,5 @@ header, main, footer {
       display: block;
     }
   }
+
+  

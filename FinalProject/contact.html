@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="dcarsin FINAL Project">
+    <title>Quesos Hnos.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logoPic">
+            <img src="images/quesosHnos.png" alt="Quesos Hermanos Logo">
+        </div>
+        <h1>Quesos Hermanos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Place Order</a></li>
+                <li><a href="delivery.html">Delivery Zones</a></li>
+                <li><a class="active" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="body2parts">
+            <div>
+                <h3>10 years serving you with the best!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis
+                    a
+                    nobis incidunt, illo aliquid deserunt dicta quo, in sapienteLorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Similique sit, voluptatum porro ex debitis a
+                    nobis incidunt, illo aliquid deserunt dicta quo, in sapiente vero cum quLorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Similique sit, voluptatum porro ex debitis a
+                    nobis incidunt, illo aliquid deserunt dicta quoLorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Similique sit, voluptatum porro ex debitis.
+                </p>
+            </div>
+			<script>
+				var imageSources = ["images/carro.jpg", "images/worker.jpg", "images/tambo.jpg", "images/juntos.jpg"]
+				var index = 0;
+				setInterval(function () {
+					if (index === imageSources.length) {
+						index = 0;
+					}
+					document.getElementById("imageToChange").src = imageSources[index];
+					index++;
+				}, 3000);
+
+			</script>
+			<img id="imageToChange" src="images/juntos.jpg" alt="Pictures of tambo">
+        </section>
+		<section id="onePiece">
+			<div>
+                <h3>We can contact you, let us know how:</h3>
+                <form>
+                    <table>
+                        <tr>
+                            <td>Your name:</td>
+                            <td><input type="text" id="Name:"/></td>
+                        </tr>
+                        <tr>
+                            <td>Best way to contact you:</td>
+                            <td><select id="howContact" name="contactBy">
+                                    <option value="Phone">Phone</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Whatsapp">Whatsapp</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Contact info:</td>
+                            <td><input type="text" id="Name:"/></td>
+                        </tr>                
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input type="button" value="Send"></td></tr>
+                    </table>
+                </form>
+                </div></section>
+    </main>
+    <footer>
+        <section id="footerSection">
+            <ul>
+                <li><a href="">QuesosHermanos.com</a></li>
+                <li><a href="">Biarritz M5 S17</a></li>
+                <li><a href="">Ciudad de la Costa, Uruguay</a></li>
+                <li><img src="images/whatsapp-logo-5.png" alt="Whatsapp Logo"><a href="">+598 92040000</a></li>
+                <li><img src="images/email.png" alt="Email Logo"><a href="">pedidos@quesoshermanos.com</a></li>
+            </ul>
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="Facebook link"
+                        width="50"></a>
+                <a href="https://twitter.com/"><img src="images/Twitter.png" alt="Twitter link" width="50"></a>
+                <a href="https://www.instagram.com/"><img src="images/Instagram_icon.png" alt="Instagram link"
+                        width="50"></a>
+                <p>Copyrights Quesos Hnos | All Rights Reserved | Privacy and Cookie Statement | David
+                    Carsin<br></p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
