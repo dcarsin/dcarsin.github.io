@@ -26,7 +26,7 @@ header, main, footer {
 }
   
   header {
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr ;
@@ -123,8 +123,27 @@ header, main, footer {
     padding: 10px;
   }
   
+#button, #orderList{
+  background-color: #222222; /* Green */
+  border: #ECD929;
+  color: #ECD929;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+
+#button {
+  border-radius: 12px;
+  margin: 4px 2px;
+  grid-column: 2/3;
+  width: 100%;
+  padding: 15px 32px;
+  font-size: 20px;
+  fon
+}
+
   section {
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 0 20px;
     /* border-style: solid;
     border-color: red; */
     border-width: 1px ; /* 20px top and bottom, 5px on the side
@@ -144,7 +163,7 @@ header, main, footer {
   }
   
   footer section {  
-    color: aqua;
+    color: rgb(137, 210,220);
       background-color: rgb(34, 34, 34);
   }
   footer > ul{
@@ -166,6 +185,7 @@ header, main, footer {
     grid-column: 1/3;
     grid-row: 2/3;
     text-align: center;
+    font-size: 12px;
   }
   /* visited link */
   a:visited {
