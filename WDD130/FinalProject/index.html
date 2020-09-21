@@ -35,6 +35,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="danbo">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -53,6 +54,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="blue">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -71,6 +73,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="colonia">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -89,6 +92,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="lowfat">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -107,6 +111,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="parmesano">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -125,6 +130,7 @@
                             <tr>
                                 <td>Select weight:</td>
                                 <td><select class="orderList" name="cuartirolo">
+                                    <option value="">Select</option>
                                         <option value="one">1 Pound</option>
                                         <option value="two">2 Pound</option>
                                         <option value="three">3 Pound</option>
@@ -135,14 +141,30 @@
                             </tr>
                         </table>
                     </div>
-                    <input id="button" type="button" value="Order now">
+                    <input id="button" type="submit" value="Order now">
+                    <div id="feedback">here</div>
                 </form>
             </div>
         </div>
     </main>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+        
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+        });
+      </script>
     <footer>
         <section id="footerSection">
-            <h5>Quesos Hnos.</h5>
             <div id="botonPart">
                 <a href="https://dcarsin.github.io/FinalProject/index.html">QuesosHermanos.com</a><br>
                 <a
