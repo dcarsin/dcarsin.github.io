@@ -2,6 +2,24 @@
 
   main {
     grid-template-columns: 1fr 1fr;
-  
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header,
+  footer {
+    border-radius: 15px;
+  }
+
+  header img {
+    float: right;
+    border-radius: 15px;
+  }
 
 }
