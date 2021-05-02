@@ -1,9 +1,18 @@
 :root {
-  --blue:  rgb(42, 157, 143);
-  --grey: rgb(38, 70, 83);
-  --red: rgb(227, 23, 10);
+  --letter:  rgb(0, 48, 73);
+  --visited: rgb(247, 127, 0);
+  --hover: rgb(214, 40, 40);
+  --backColor: rgb(234, 226, 183);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
+main section {
+  margin: 1rem;
+  border: 0.5px;  
+}
 header,
 main,
 nav,
@@ -14,12 +23,14 @@ footer {
 }
 
 html {
-  background-color: #999;
+  background-color: rgb(234, 226, 183);
   margin: auto;
+  display: block;
 }
 body {
   font-size: 16px;
-  font-family: "Lucida Bright", Helvetica, sans-serif;
+  color: var(--letter);
+  font-family: "Aclonica", Helvetica, sans-serif;
 }
 
 h1 {
@@ -53,10 +64,10 @@ footer, a {
 
 /* visited link */
 a:visited {
-  color: rgb(233, 196, 106);
+  color:var(--visited);
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--red);
+  color: var(--hover);
 }
