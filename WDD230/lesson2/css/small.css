@@ -1,8 +1,8 @@
 :root {
-  --letter:  rgb(0, 48, 73);
-  --visited: rgb(247, 127, 0);
+  --letter:  rgb(57, 57, 58);
+  --visited: rgb(120, 109, 95);
   --hover: rgb(214, 40, 40);
-  --backColor: rgb(234, 226, 183);
+  --backColor: rgb(99, 176, 205);
 }
 main {
   display: grid;
@@ -23,7 +23,7 @@ footer {
 }
 
 html {
-  background-color: rgb(234, 226, 183);
+  background-color: rgb(233, 210, 244);
   margin: auto;
   display: block;
 }
