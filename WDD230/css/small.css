@@ -1,8 +1,9 @@
 :root {
-  --blue:  rgb(42, 157, 143);
-  --grey: rgb(38, 70, 83);
-  --red: #ECAAB9;
-  --background: rgb(153, 153, 153);
+  --title:  rgb(255, 255, 255);
+  --headerFooter: #334a6e;
+  --background: #dbdbdb;
+  --visitedFooter: #e0d252;
+  --visited: #4662bd;
 }
 
 header,
@@ -25,7 +26,7 @@ body {
 
 h1 {
   /* text-shadow: 2px 2px 5px red; */
-  color: var(--blue);
+  color: var(--title);
   font-size: 1.5rem;
   margin: 0.2rem;
 }
@@ -37,27 +38,37 @@ h2 {
 header, footer {
   padding: 10px;
   text-align: center;
-  background-color: var(--grey);
+  background-color: var(--headerFooter);
   justify-items: center;
   margin: 10px;
 }
 
-
+.centrado{
+  margin-top: 20px;
+  margin: auto;
+  }
+  
 header img {
   width: 150px;
   height: auto;
 }
 
-footer, a {
-  color: #FFD180;
+footer, footer a, #lastUpdate {
+  color: var(--title);
+}
+
+/* visited link */
+footer a:visited {
+  color: var(--visitedFooter);
 }
 
 /* visited link */
 a:visited {
-  color: rgb(3, 1, 32);
+  color: var(--visited);
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--red);
+  font-weight: bold;
 }
+
