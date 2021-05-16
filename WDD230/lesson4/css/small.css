@@ -6,19 +6,17 @@
   --visited: #4662bd;
 }
 
-body {
-  font-family: 'Merriweather+Sans', Helvetica, sans-serif;
-  ;
-  font-size: 18px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-header,
-main,
-nav,
-footer {
-  max-width: 45rem;
-  margin: 10px;
-  line-height: 1.4;
+main {
+  padding: 20px;
+}
+body {
+  font-family: 'Merriweather+Sans', Helvetica, sans-serif;  ;
+  font-size: 18px;
 }
 
 html {
@@ -39,18 +37,25 @@ h2 {
 
 header,
 footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background-color: var(--headerFooter);
   justify-items: center;
+}
+.content {
+  border-style: dashed;
   margin: 10px;
+  padding: 15px;
 }
 
 .centrado {
   margin-top: 20px;
   margin: auto;
 }
-
+nav {  
+  background-color: rgb(105, 157, 218);
+  margin: 0 auto;
+}
 .navigation {
   text-align: center;
   list-style: none;

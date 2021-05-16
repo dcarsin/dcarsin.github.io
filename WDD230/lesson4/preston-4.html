@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -20,6 +21,7 @@
                 <img src="images/pngegg.png" alt="Weather Site Project">
             </div>
             <h1>AcaWeather.com</h1>
+            <div id="frase">To get the right data</div>
             <nav>
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">Menu</a></li>
@@ -31,20 +33,16 @@
             </nav>
         </header>
 
-        <main style="padding-left: 10px;">
-            <h3>Site name: <a href="">acaweather.com</a></h3>
-            <p>“Aca” in Spanish stands for: here, this is in reference to the famous accuweather.com </p>
-            <h3>Site Purpose:</h3>
-            <p>This site will provide accurate information about local weather, for up to 5 days in front,
-                providing info for
-                wind, pressure, humidity and visibility.</p>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="content">Hero W/ Weather Summary</div>
+            <div class="content">5 Day forecast</div>
+            <div class="content">Article</div>
+            <div class="content">Contact information</div>
         </main>
 
         <footer>
-            <p>&copy;
-                - David Carsin - Uruguay - <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho
-                    Online
-                    Learning</a></p>
+            <p><div id="year"></div></p>
             <div id="lastUpdate"></div>
             <script src="js/script.js"></script>
         </footer>
