@@ -1,29 +1,34 @@
 @media only screen and (min-width: 64em) {
 
-    header {
-      size: 1.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-    
-    header img {
-      float: right;
-    }
-  
-    .navigation {
-      display: flex;
-    }
-  
-    .navigation li {
-      display: block;
-      flex: 1 1 auto;
-    }
-    .navigation li:first-child {
-      display: none;
-    }
+  header {
+    size: 1.5rem;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  header img {
+    float: right;
+  }
+
+  header img {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}

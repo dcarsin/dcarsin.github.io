@@ -11,4 +11,4 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 document.querySelector('#year').innerHTML = `&copy;`+ new Date().getFullYear() + `- David Carsin - Uruguay - <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
 Learning</a>`;
-document.querySelector('#lastUpdate').innerHTML = "Last Updated: " + fulldate;
+document.querySelector('#lastUpdate').innerHTML = "Today is: " + fulldate;
