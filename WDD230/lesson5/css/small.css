@@ -103,11 +103,7 @@ a:visited {
   color: var(--visited);
 }
 
-/* mouse over link */
-a:hover {
-  font-weight: bold;
-}
-
 header li:hover {
   background-color: rgb(212, 229, 236);
+  font-weight: bold;
 }
