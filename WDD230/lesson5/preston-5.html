@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="favicon.ico">
+    <script defer src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -19,10 +20,12 @@
     <div class="centrado">
         <header>
             <div id="logoPic">
-                <img src="images/pngegg.png" alt="Weather Site Project">
+                <img src="images/pngegg.png" alt="acaWeather.com Site">
+                <div id="company">
+                    <h1>AcaWeather.com</h1>
+                    <p>The right weather for your new adventure</p>
+                </div>
             </div>
-            <h1>AcaWeather.com</h1>
-            <div id="frase">To get the right data</div>
             <nav>
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">Menu</a></li>
@@ -35,20 +38,85 @@
                 </ul>
             </nav>
         </header>
-
         <main>
+            <aside>Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</aside>
             <h2>Preston Idaho</h2>
-            <div class="content">Hero W/ Weather Summary</div>
-            <div class="content">5 Day forecast</div>
-            <div class="content">Article</div>
-            <div class="content">Contact information</div>
-        </main>
+            <div class="herodiv">
+                <section class="stats">
+                    <h3>Summary</h3>
+                    <p>Currently: <span class="heroData">Sunny</span></p>
+                    <p>High: <span class="heroData">76 &deg; </span></p>
+                    <p>Wind Chill: <span class="heroData">5 mph</span></p>
+                    <p>Humidity: <span class="heroData">69%</span></p>
+                    <p>Wind Speed: <span class="heroData">5 mph</span></p>
+                </section>
+                <img src="images/PrestonHero.jpg" alt="Preston Hero image">
+            </div>
 
-        <footer>
-            <div id="year"></div>
-            <div id="lastUpdate"></div>
-            <script src="js/script.js"></script>
-        </footer>
+            <section class="forecast">
+                <h2> 5 day Forecast</h2>
+                <div class="grid">
+                    <div class="grid-col">
+                        <span class="col-head"></span>
+                        <img src="images/cloudy.png" alt="kitten!">
+                        <span class="data">90F&deg;</span>
+                    </div>
+                    <div class="grid-col">
+                        <span class="col-head"></span>
+                        <img src="images/rain.png" alt="kitten!">
+                        <span class="data">80F&deg;</span>
+                    </div>
+                    <div class="grid-col">
+                        <span class="col-head"></span>
+                        <img src="images/snow.png" alt="kitten!">
+                        <span class="data">85F&deg;</span>
+                    </div>
+                    <div class="grid-col">
+                        <span class="col-head"></span>
+                        <img src="images/sunny.png" alt="kitten!">
+                        <span class="data">82F&deg;</span>
+                    </div>
+                    <div class="grid-col">
+                        <span class="col-head"></span>
+                        <img src="images/sunnyRaining.png" alt="kitten!">
+                        <span class="data">86F&deg;</span>
+                    </div>
+            </section>
+            <section class="activities">
+                <h2>Events</h2>
+                <img src="images/oldMen.jpg" alt="Event image">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta similique qui, doloremque, dolores
+                    doloribus sapiente vitae molestiae quos dignissimos delectus dolore voluptatum. Aspernatur suscipit
+                    recusandae quos dolorum consectetur sed eaque corporis. Nobis perferendis earum cumque. Molestiae
+                    delectus mollitia ex dolorum quas porro nisi eum cum praesentium consequuntur facilis quis,
+                    excepturi, pariatur minima eveniet. Corrupti magnam non corporis culpa officia. Amet nihil dolores
+                    velit et libero laudantium facilis, in voluptatum odio placeat natus corrupti praesentium explicabo
+                    iste, quia incidunt itaque nobis? Nostrum animi corporis est distinctio quasi nisi asperiores vitae
+                    excepturi blanditiis. Quam, dolores laboriosam. Perferendis mollitia, recusandae doloremque enim
+                    itaque dolore ipsum! Earum adipisci quidem eaque tenetur minus, expedita consequatur dolor iure,
+                    eveniet cumque odit voluptate doloremque maiores? Quia dolor praesentium nulla. Facere nobis,
+                    provident sequi quaerat aut cumque eius, quam beatae, quibusdam pariatur accusantium. Neque delectus
+                    consequatur officia eos nostrum natus maxime excepturi aut dolorem, molestias, quaerat possimus
+                    molestiae eligendi, pariatur in et ea sapiente itaque perspiciatis assumenda enim doloremque
+                    consequuntur fugiat. Totam nesciunt quibusdam officiis placeat reprehenderit modi sit incidunt odit
+                    quia nihil quae excepturi sunt, non pariatur voluptatum deserunt laudantium eaque quisquam!
+                    Veritatis maxime quia ex? Adipisci vel expedita alias, error perferendis suscipit obcaecati
+                    molestiae harum iure?</p>
+
+            </section>
+            <section class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div id="year"></div>
+        <div id="lastUpdate"></div>
+    </footer>
     </div>
 </body>
 

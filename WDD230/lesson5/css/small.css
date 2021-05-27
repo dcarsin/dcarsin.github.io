@@ -10,12 +10,15 @@
   margin: 0;
   padding: 5px;
   box-sizing: border-box;
+  max-width: 1400px;
 }
+
 main {
   padding: 20px;
 }
+
 body {
-  font-family: 'Merriweather+Sans', Helvetica, sans-serif;  ;
+  font-family: 'Merriweather+Sans', Helvetica, sans-serif;
   font-size: 18px;
 }
 
@@ -35,42 +38,47 @@ h2 {
   font-size: 1rem;
 }
 
-header{
-  position: relative;
-  padding: 10px;
-  text-align: center;
+#logoPic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--headerFooter);
-  justify-items: center;
 }
-
+.herodiv, img {
+  width: 1200px;
+  height: auto;
+}
 footer {
   padding: 10px;
   text-align: center;
   background-color: var(--headerFooter);
   justify-items: center;
 }
-.content {
-  border-style: dashed;
-  margin: 10px;
-  padding: 15px;
+
+#company {
+  align-items: center;
 }
 
 .centrado {
   margin-top: 20px;
   margin: auto;
 }
-nav {  
+
+nav {
   background-color: rgb(105, 157, 218);
   margin: 0 auto;
 }
+
 .navigation {
   text-align: center;
   list-style: none;
   padding: 0;
 }
+
 .navigation a {
   text-align: center;
 }
+
 .navigation li:first-child {
   display: block;
 }
@@ -78,6 +86,7 @@ nav {
 .navigation li {
   display: none;
 }
+
 .responsive li {
   display: block;
 }
@@ -104,6 +113,83 @@ a:visited {
 }
 
 header li:hover {
-  background-color: rgb(212, 229, 236);
+  background-color: var(--background);
   font-weight: bold;
+}
+
+.herodiv {
+  position: relative;
+}  
+
+.stats {
+position: absolute;
+top: 50px;
+left: 50px;
+background: radial-gradient(#eee, #4567aa);
+border: 1px solid #000;
+padding: 1.5rem;
+box-shadow: 0 0 30px #111;
+}
+
+.stats .heroData{
+  color: #334a6e;
+  font-weight: bold;
+}
+/* Grid */
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+.grid-col {
+  background-color: #e0e0e0;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.activities img{
+  float: right;
+  max-width: fit-content;
+}
+.grid img{
+  width: 64px;
+  height: auto;
+}
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+aside {
+  display: none;
+}
+
+.mapouter {
+  position: relative;
+  align-items: center;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+iframe {
+  width: 600px; 
+  height: 500px;
+  border: 1px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+#herodiv img { 
+  width:100%;
 }
