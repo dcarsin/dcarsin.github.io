@@ -10,7 +10,6 @@
   margin: 0;
   padding: 5px;
   box-sizing: border-box;
-  max-width: 1400px;
 }
 
 main {
@@ -19,6 +18,7 @@ main {
 
 body {
   font-family: 'Merriweather+Sans', Helvetica, sans-serif;
+  ;
   font-size: 18px;
 }
 
@@ -44,10 +44,7 @@ h2 {
   justify-content: center;
   background-color: var(--headerFooter);
 }
-.herodiv, img {
-  width: 1200px;
-  height: auto;
-}
+
 footer {
   padding: 10px;
   text-align: center;
@@ -190,6 +187,7 @@ iframe {
   width: 600px;
 }
 
-#herodiv img { 
+img { 
   width:100%;
+  height: auto; 
 }
