@@ -6,6 +6,11 @@
   --visited: #4662bd;
 }
 
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 5px;
@@ -93,9 +98,7 @@ header img {
   height: auto;
 }
 
-footer,
-footer a,
-#lastUpdate {
+footer a, #lastUpdate {
   color: var(--title);
 }
 
@@ -119,7 +122,6 @@ header li:hover {
 }  
 
 .stats {
-position: absolute;
 top: 50px;
 left: 50px;
 background: radial-gradient(#eee, #4567aa);
@@ -168,26 +170,25 @@ aside {
 }
 
 .mapouter {
-  position: relative;
-  align-items: center;
-  text-align: right;
-  height: 500px;
-  width: 600px;
-}
-iframe {
-  width: 600px; 
-  height: 500px;
-  border: 1px;
+  margin: auto;
 }
 
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 600px;
+.social img {
+  width: 50px;
+  height: auto;
+  margin: 0 10px 0 10px;
+}
+#contact {
+  content: center;
+  text-align: center;
+  margin: auto;
 }
 
 img { 
   width:100%;
   height: auto; 
+}
+
+.active {
+    background-color: rgb(84, 172, 223);
 }

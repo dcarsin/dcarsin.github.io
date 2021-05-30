@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AcaWeather Site">
-    <title>AcaWeather.com</title>
+    <meta name="description"
+        content="AcaWeather.com is a Weather Site, where you can fund precisly data for local weather in diferent locations.">
+    <title>AcaWeather.com Preston Idaho</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -20,9 +21,9 @@
     <div class="centrado">
         <header>
             <div id="logoPic">
-                <img src="images/pngegg.png" alt="acaWeather.com Site">
+                <img src="images/pngegg.png" alt="AcaWeather Site">
                 <div id="company">
-                    <h1>AcaWeather.com</h1>
+                    <h1>AcaWeather</h1>
                     <p>The right weather for your new adventure</p>
                 </div>
             </div>
@@ -30,11 +31,11 @@
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">Menu</a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Preston.html">Preston</a></li>
-                    <li><a href="SodaSprings.html">Soda Springs</a></li>
-                    <li><a href="FishHaven.html">Fish Haven</a></li>
-                    <li><a href="StormCenter.html">Storm Center</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a class="active" href="#">Preston</a></li>
+                    <li><a href="sodaSprings.html">Soda Springs</a></li>
+                    <li><a href="fishHaven.html">Fish Haven</a></li>
+                    <li><a href="stormCenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,37 +51,37 @@
                     <p>Humidity: <span class="heroData">69%</span></p>
                     <p>Wind Speed: <span class="heroData">5 mph</span></p>
                 </section>
-                <img src="images/PrestonHero.jpg" alt="Preston Hero image">
+                <img src="images/prestonHero.jpg" alt="Preston Hero image">
             </div>
-
             <section class="forecast">
                 <h2> 5 day Forecast</h2>
                 <div class="grid">
                     <div class="grid-col">
                         <span class="col-head"></span>
-                        <img src="images/cloudy.png" alt="kitten!">
+                        <img src="images/cloudy.png" alt="cloudy">
                         <span class="data">90F&deg;</span>
                     </div>
                     <div class="grid-col">
                         <span class="col-head"></span>
-                        <img src="images/rain.png" alt="kitten!">
+                        <img src="images/rain.png" alt="rain">
                         <span class="data">80F&deg;</span>
                     </div>
                     <div class="grid-col">
                         <span class="col-head"></span>
-                        <img src="images/snow.png" alt="kitten!">
+                        <img src="images/snow.png" alt="snow">
                         <span class="data">85F&deg;</span>
                     </div>
                     <div class="grid-col">
                         <span class="col-head"></span>
-                        <img src="images/sunny.png" alt="kitten!">
+                        <img src="images/sunny.png" alt="sunny">
                         <span class="data">82F&deg;</span>
                     </div>
                     <div class="grid-col">
                         <span class="col-head"></span>
-                        <img src="images/sunnyRaining.png" alt="kitten!">
+                        <img src="images/sunnyRaining.png" alt="sunnyRaining">
                         <span class="data">86F&deg;</span>
                     </div>
+                </div>
             </section>
             <section class="activities">
                 <h2>Events</h2>
@@ -102,22 +103,26 @@
                     quia nihil quae excepturi sunt, non pariatur voluptatum deserunt laudantium eaque quisquam!
                     Veritatis maxime quia ex? Adipisci vel expedita alias, error perferendis suscipit obcaecati
                     molestiae harum iure?</p>
-
             </section>
             <section class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe id="gmap_canvas"
+                <iframe id="gmap_canvas"
                         src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
                     </iframe>
+                <!-- <img src="images/prestonMap.png" alt="Preston Map Town"> -->
+                <div class="social">
+                    <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="Facebook link"
+                            width="50"></a>
+                    <a href="https://twitter.com/"><img src="images/Twitter.png" alt="Twitter link" width="50"></a>
+                    <a href="https://www.instagram.com/"><img src="images/Instagram_icon.png" alt="Instagram link"
+                            width="50"></a><br>
+                    <img src="images/email.png" alt="Email Logo"><a href="">info@AcaWeather.com</a><br>
                 </div>
-                
             </section>
         </main>
-    </div>
-    <footer>
-        <div id="year"></div>
-        <div id="lastUpdate"></div>
-    </footer>
+        <footer>
+            <div id="year"></div>
+            <div id="date"></div>
+        </footer>
     </div>
 </body>
 
