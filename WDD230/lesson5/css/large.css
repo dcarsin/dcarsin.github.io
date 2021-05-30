@@ -14,10 +14,6 @@
     display: flex;
   }
 
-  .stats {
-    position: absolute;
-  }
-  
   .mapouter {
     display: grid;  
     grid-template-columns: 1fr 1fr;
