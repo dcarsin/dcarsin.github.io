@@ -45,12 +45,17 @@
                 <section class="stats">
                     <h3>Summary</h3>
                     <p>Currently: <span class="heroData">Sunny</span></p>
-                    <p>High: <span class="heroData">76 &deg; </span></p>
-                    <p>Wind Chill: <span class="heroData">5 mph</span></p>
-                    <p>Humidity: <span class="heroData">69%</span></p>
-                    <p>Wind Speed: <span class="heroData">5 mph</span></p>
+                    <p>High: <span class="heroData"></span>&deg;</p>
+                    <p>Wind Chill: <span class="heroData"></span>mph</p>
+                    <p>Humidity: <span class="heroData">69</span>%</p>
+                    <p>Wind Speed: <span class="heroData"></span>mph</p>
                 </section>
-                <img src="images/preston.jpg" alt="Preston Hero image">
+                <picture>
+                    <source srcset="images/small.png" media="(max-width:499px)">
+                    <source srcset="images/medium.png" media="(min-width:500px) and (max-width:799px)">
+                    <source srcset="images/large.png" media="(min-width:800px)">
+                    <img src="images/preston.jpg" alt="Preston Hero image">
+                </picture>
             </div>
             <section class="forecast">
                 <h2> 5 day Forecast</h2>
@@ -123,6 +128,7 @@
             <div id="date"></div>
         </footer>
     </div>    
+    <script src="js/windchill.js"></script>
     <script src="js/script.js"></script>
     <script src="js/fontload.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>

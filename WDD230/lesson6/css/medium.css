@@ -1,0 +1,41 @@
+@media only screen and (min-width: 32.5em) {
+
+  header {
+    left: 15px;
+    resize: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+/*   
+  header img {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  } */
+  .mapouter {
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+  }  
+  .stats {
+    position: absolute;
+  }
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  main {
+    padding: 50px;
+  }
+}
