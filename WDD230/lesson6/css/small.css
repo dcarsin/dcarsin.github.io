@@ -173,7 +173,13 @@ aside {
 }
 
 .mapouter {
-  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+.mapouter img{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .social img {

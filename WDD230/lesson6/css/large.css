@@ -15,8 +15,10 @@
   }
 
   .mapouter {
-    display: grid;  
-    grid-template-columns: 1fr 1fr;
+    float: left;
+    width: auto;
+    margin-left: 6rem;
+    justify-self: center;
   }
   .navigation li {
     display: block;
