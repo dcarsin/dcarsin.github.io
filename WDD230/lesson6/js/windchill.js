@@ -4,10 +4,13 @@ function windChill(temp, speed){
     return windChill;
 }
 
-let heroDataLista = document.getElementsByClassName('heroData');
+let heroDataLista = document.getElementsByClassName('heroData'); // to get all into array
 let speed = 5;
 let temp = 76;
-let chill = windChill(temp, speed);
-heroDataLista[1].textContent = temp;
+let chill = "no available";
+if (speed > 4.8 && temp < 50) {
+    let chill = windChill(temp, speed);
+}
+heroDataLista[1].textContent = temp;  // save data into array from line 7 of 'heroData'
 heroDataLista[2].textContent = chill;
 heroDataLista[4].textContent = speed;

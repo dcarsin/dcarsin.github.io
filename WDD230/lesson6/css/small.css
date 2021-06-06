@@ -20,7 +20,10 @@ header, main, footer {
 main {
   padding: 20px;
 }
-
+#mainPic{
+  padding: -5;
+  
+}
 body {
   font-family: 'Merriweather+Sans', Helvetica, sans-serif;
   ;
