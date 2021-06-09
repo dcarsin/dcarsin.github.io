@@ -11,17 +11,16 @@ main {
 picture {
   grid-column: 1/2;
 }
+
 img {
     filter: blur(0px);
-    transition: filter 0.5s;
+    transition: filter 1s;
     padding: 2px;
   }
+
   img[data-src] {
     filter: blur(2px);
   }
-  h1 {
-    font-family:'Antonio', sans-serif;
-    color: rgb(47, 32, 189);
-    
-    font-size: 1.5rem;
+  h1 {    
+    font-size: 2rem;
   }
