@@ -1,0 +1,27 @@
+
+main {
+    margin: auto;
+    justify-content: center;
+    width: fit-content;
+  }
+#col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+picture {
+  grid-column: 1/2;
+}
+img {
+    filter: blur(0px);
+    transition: filter 0.5s;
+    padding: 2px;
+  }
+  img[data-src] {
+    filter: blur(2px);
+  }
+  h1 {
+    font-family:'Antonio', sans-serif;
+    color: rgb(47, 32, 189);
+    
+    font-size: 1.5rem;
+  }
