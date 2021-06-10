@@ -7,6 +7,15 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 document.querySelector('#year').innerHTML = `&copy;`+ new Date().getFullYear() + `- David Carsin - Uruguay - <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
 Learning</a>`;
 document.querySelector('#date').innerHTML = fulldate;
+
+const lastVisit = localStorage.getItem('lastvisit') || Date.now();
+let numDates = (lastVisit - Date.now()) / 864000;
+if (numDates == 0) {
+    document.querySelector('#visited').textContent = `Welcome`;
+} else {
+    document.querySelector('#visited').textContent =  `Dates since you last visit: ${numDates}`;
+}    
+
 if (now.getDay() == 5){
     document.querySelector('aside').style.display = 'block';
 }
