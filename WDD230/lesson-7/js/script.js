@@ -8,8 +8,8 @@ document.querySelector('#year').innerHTML = `&copy;`+ new Date().getFullYear() +
 Learning</a>`;
 document.querySelector('#date').innerHTML = fulldate;
 
-const lastVisit = localStorage.getItem('lastvisit') || Date.now();
-let numDates = (lastVisit - Date.now()) / 864000;
+const lastVisit = localStorage.getItem('lastvisit') || now;
+let numDates = (lastVisit - now) / 864000;
 if (numDates == 0) {
     document.querySelector('#visited').textContent = `Welcome`;
 } else {
