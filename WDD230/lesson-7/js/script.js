@@ -1,38 +1,43 @@
-const imageToLoad = document.querySelectorAll("img[data-src]");
 
-// option parameters being set for the IntersectionObserver
-const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
-};
-// set src and reset data-src
-const loadImages = (image) =>{
-    image.setAttribute('src',image.getAttribute('data-src'));
-    image.onload = () =>{image.removeAttribute('data-src');};
+//add day data into footer
+const datefield = document.querySelector("data");
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
-};
+document.querySelector('#year').innerHTML = `&copy;`+ new Date().getFullYear() + `- David Carsin - Uruguay - <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+Learning</a>`;
+document.querySelector('#date').innerHTML = fulldate;
+if (now.getDay() == 5){
+    document.querySelector('aside').style.display = 'block';
+}
 
-//first check to see if Intersection Observer is supported
-if('IntersectionObserver' in window){
-    const imgObserver = new IntersectionObserver((items, observer) =>{
-        items.forEach((item) =>{
-            if(!item.isIntersecting){
-                return;
-            }
-            else{
-                loadImages(item.target);
-                imgObserver.unobserve(item.target);
-            }
+//5days Forecast and replace with the corresponding 5 days 3 letters that follows
+let lista = document.getElementsByClassName('col-head');
+console.log(lista);
+let startDate = now.getDay();
+console.log("start date: "+startDate);
+for (let i = 0; i < 5; i++) {
+    lista[i].textContent = DaysWeek(startDate);   
+    startDate++;
+    if (startDate == 8) {
+        startDate = 1;
+    }
+}
 
-        });
-    },imgOptions);
+// convert date number into 3 letters day
+function DaysWeek(dayNum){
+    let returnDate;
+    if      (dayNum == 1){   returnDate = "Mon"  }
+    else if (dayNum == 2){   returnDate = "Tue"  }
+    else if (dayNum == 3){   returnDate = "Wed"  }
+    else if (dayNum == 4){   returnDate = "Thu"  }
+    else if (dayNum == 5){   returnDate = "Fri"  }
+    else if (dayNum == 6){   returnDate = "Sat"  }
+    else if (dayNum == 7){   returnDate = "Sun"  }
+    return returnDate;
+}
 
-//loop through each img on check status and load if necessary
-    imageToLoad.forEach((img) =>{
-    imgObserver.observe(img);
-});
-}else{
-    imageToLoad.forEach((img) =>{
-        loadImages(img);
-    });
+// toggleMenu
+function toggleMenu(){
+    document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
 }

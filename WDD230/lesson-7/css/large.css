@@ -1,0 +1,42 @@
+@media only screen and (min-width: 64em) {
+
+  header {
+    size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .mapouter {
+    float: left;
+    width: auto;
+    margin-left: 6rem;
+    justify-self: center;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .imagesGallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  figure img:hover {
+    box-shadow: 0 0 30px rgb(31, 0, 0);
+  }
+}
