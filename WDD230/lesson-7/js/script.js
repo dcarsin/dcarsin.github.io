@@ -24,9 +24,9 @@ if (now.getDay() == 5){
 let lista = document.getElementsByClassName('col-head');
 console.log(lista);
 let startDate = now.getDay();
-console.log("start date: "+startDate);
 for (let i = 0; i < 5; i++) {
-    lista[i].textContent = DaysWeek(startDate);   
+    //lista[i].textContent = DaysWeek(startDate);   
+    lista[i] = DaysWeek(startDate);   
     startDate++;
     if (startDate == 8) {
         startDate = 1;
