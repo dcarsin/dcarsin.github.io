@@ -22,7 +22,6 @@ if (now.getDay() == 5){
 
 //5days Forecast and replace with the corresponding 5 days 3 letters that follows
 let lista = document.getElementsByClassName('col-head');
-console.log(lista);
 let startDate = now.getDay();
 for (let i = 0; i < 5; i++) {
     //lista[i].textContent = DaysWeek(startDate);   
