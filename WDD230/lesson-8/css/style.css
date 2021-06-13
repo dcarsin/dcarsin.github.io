@@ -1,0 +1,59 @@
+ 
+main {
+    margin: auto;
+    justify-content: center;
+    width: fit-content;
+  }
+  
+  body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+#col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+picture {
+  grid-column: 1/2;
+}
+
+img {
+    filter: blur(0px);
+    transition: filter 1s;
+    padding: 2px;
+  }
+
+  img[data-src] {
+    filter: blur(2px);
+  }
+  h1 {    
+    font-size: 2rem;
+  }
+
+  .table {
+    margin: auto;
+    width: 50% !important; 
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    
+    /* box-shadow: 5px 5px 7px #628ca6; */
+    box-shadow: 10px 10px 10px #628ca6;
+  }
+
+  .tableTitle {
+    background-color: #7fb9c2;
+    font-size: 30px;
+  }
+  .tableHeader {
+    color: white;
+    background-color: #628ca6;
+  }
+  .tableFooter {
+    background-color: #7fb9c2;
+  }
+  
+  tbody.forHover td:hover {
+    color: white;
+    background-color: #628ca6;
+    }
