@@ -10,7 +10,3 @@ for (let i = 0; i < trParts.length; i++) {
         trParts[i].style.backgroundColor = "#e7ffed";
     }
 }
-
-
-
-
