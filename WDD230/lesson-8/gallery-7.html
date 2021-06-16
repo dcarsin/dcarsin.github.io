@@ -17,81 +17,115 @@
 </head>
 
 <body>
-    <div class="centrado">
-        <header>    
-            <div id="logoPic">
-                <img src="images/pngegg.png" alt="AcaWeather Site">
-                <div id="company">
-                    <h1>AcaWeather</h1>
-                    <p>The right weather for your new adventure</p>
-                </div>
+    <header>
+        <div id="logoPic">
+            <img src="images/pngegg.png" alt="AcaWeather Site">
+            <div id="company">
+                <h1>AcaWeather</h1>
+                <p>The right weather for your new adventure</p>
             </div>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="preston.html">Preston</a></li>
-                    <li><a href="sodaSprings.html">Soda Springs</a></li>
-                    <li><a href="fishHaven.html">Fish Haven</a></li>
-                    <li><a href="stormCenter.html">Storm Center</a></li>
-                    <li><a class="active" href="#">Gallery</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <aside>Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</aside>
-            <h2>Weather Gallery</h2>
-            <div id="visited"></div>
-            <section class="imagesGallery">
-                <figure>
-                    <img src="images/placeholderSmall.jpg"
-                        data-src="images/island-during-golden-hour-and-upcoming-storm.jpg"
-                        alt="Island during golden hour and upcoming storm">
-                    <figcaption>Island during golden hour and upcoming storm</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/clouds-during-dawn.jpg"
-                        alt="Clouds during dawn">
-                    <figcaption>Clouds during dawn</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/rain-drops.jpg" alt="Rain drops">
-                    <figcaption>Rain drops</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/fall-trees.jpg" alt="Fall trees">
-                    <figcaption>Fall trees</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/rainbow-on-grass-field.jpg"
-                        alt="Rainbow on grass field">
-                    <figcaption>Rainbow on grass field</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/landscape-of-skies.jpg"
-                        alt="Landscape of skies">
-                    <figcaption>Landscape of skies</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/blue-and-green-sky-and-mountain.jpg"
-                        alt="Blue and green sky and mountain">
-                    <figcaption>Blue and green sky and mountain</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/mountains-under-cloudy-sky.jpg"
-                        alt="Mountains under cloudy sky">
-                    <figcaption>Mountains under cloudy sky</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/placeholderSmall.jpg" data-src="images/lightning.jpg" alt="Lightning">
-                    <figcaption>Lightning</figcaption>
-                </figure>
-        </main>
-        <footer>
-            <div id="year"></div>
-            <div id="date"></div>
-        </footer>
-    </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormCenter.html">Storm Center</a></li>
+                <li><a class="active" href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</aside>
+        <form action="thanks.html">
+            <table>
+                <tr>
+                    <td><label for="fullName">Full Name:</label></td>
+                    <td><input class="form-control" type="text" pattern="[A-Za-z]{5}" id="fullName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input class="form-control" type="email" name="email" placeholder="name@domain.com" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone number:</label></td>
+                    <td><input class="form-control" type="tel" name="phone" id="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip code:</label></td>
+                    <td><input class="form-control" type="number" name="zip" id="zip" required></td>
+                </tr>
+                <tr>
+                    <td><label for="stormDate">Storm date:</label></td>
+                    <td><input class="form-control" type="date" name="stormDate" id="stormDate"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><label for="stormType" >Storm type:</label></td>
+                    <td><input list="list" id="stormType">
+                        <datalist id="list">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="radioOpt" class="flexly" for="rating">Storm severity:</td>
+                    <td><input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                        </label>
+                    <td><datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="stormRegion">Seleccione Pais:</label></td>
+                    <td><select name="stormRegion" id="stormRegion">
+                            <option hidden>Select Region ...</option>
+                            <option>Preston</option>
+                            <option>Soda Springs</option>
+                            <option>Fish Haven</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="radioOptions">User in-danger level:</label></td>
+                    <td><input type="radio" id="yes" name="radioOptions" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="maybe" name="radioOptions" value="maybe">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="no" name="radioOptions" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comments:</label></td>
+                    <td><textarea name="comments" id="comments" rows="5"></textarea></td>
+                </tr>
+            </table>
+            <input class="button" type="submit" value="Press to submit">
+        </form>
+    </main>
+    <footer>
+        <div id="year"></div>
+        <div id="date"></div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
     <script src="js/script.js"></script>
     <script src="js/fontload.js"></script>
