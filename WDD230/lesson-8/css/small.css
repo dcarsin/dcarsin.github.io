@@ -224,3 +224,15 @@ img.imagesGallery {
 img[data-src] {
   filter: blur(2px);
 }
+
+.button {
+  border-width: 1px;
+  height: 35px;
+  border-radius: 4px;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  background-color:rgb(105, 157, 218);
+ }

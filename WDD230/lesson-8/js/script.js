@@ -8,17 +8,17 @@ document.querySelector('#year').innerHTML = `&copy;`+ new Date().getFullYear() +
 Learning</a>`;
 document.querySelector('#date').innerHTML = fulldate;
 
-const lastVisit = localStorage.getItem('lastvisit') || now;
-let numDates = (lastVisit - now) / 864000;
-if (numDates == 0) {
-    document.querySelector('#visited').textContent = `Welcome`;
-} else {
-    document.querySelector('#visited').textContent =  `Dates since you last visit: ${numDates}`;
-}    
+// const lastVisit = localStorage.getItem('lastvisit') || now;
+// let numDates = (lastVisit - now) / 864000;
+// if (numDates == 0) {
+//     document.querySelector('#visited').textContent = `Welcome`;
+// } else {
+//     document.querySelector('#visited').textContent =  `Dates since you last visit: ${numDates}`;
+// }    
 
-if (now.getDay() == 5){
-    document.querySelector('aside').style.display = 'block';
-}
+// if (now.getDay() == 5){
+//     document.querySelector('aside').style.display = 'block';
+// }
 
 //5days Forecast and replace with the corresponding 5 days 3 letters that follows
 let lista = document.getElementsByClassName('col-head');
