@@ -1,12 +1,13 @@
 
 
-let tbodyList = document.getElementsByClassName('forHover'); // to get all into array
+let tbodyList = document.getElementsByTagName('tbody'); // to get all into array
 let trParts = tbodyList[0].getElementsByTagName("tr");
 for (let i = 0; i < trParts.length; i++) {
-    if (i == 0 || i%2 == 0){
-        trParts[i].style.backgroundColor =  "#e7f0ed";
-    }
-    else {
-        trParts[i].style.backgroundColor = "#e7ffed";
+    if (trParts[i].getElementsByTagName("td")[0].textContent == "November"){
+        trParts[i].getElementsByTagName("td")[2].style.color = "white";
+        trParts[i].getElementsByTagName("td")[2].style.backgroundColor = "#628ca6";
     }
 }
+
+// color: white;
+// background-color: #628ca6;

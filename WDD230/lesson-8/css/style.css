@@ -42,21 +42,25 @@
    box-shadow: 10px 10px 10px #628ca6;
  }
 
- .tableTitle {
+ thead {
    background-color: #7fb9c2;
    font-size: 30px;
  }
 
- .tableHeader {
+ thead tr:nth-child(2) {
    color: white;
+   font-size: 20px;
    background-color: #628ca6;
  }
 
- .tableFooter {
+ tfoot {
    background-color: #7fb9c2;
  }
 
- tbody.forHover td:hover {
-   color: white;
-   background-color: #628ca6;
+ tbody tr:nth-child(odd){
+  background-color: #e7f0ed;
+ }
+
+ tbody tr:nth-child(even){
+  background-color: #e7ffed;
  }
