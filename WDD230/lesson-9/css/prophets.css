@@ -6,12 +6,6 @@
    text-align: center;
    box-shadow: 0 0 30px rgba(240, 236, 236, 0);
  }
- header{
-  font-size: 2rem;
-}
-footer{
- font-size: 1.5rem;
-}
 h1 {
 margin: 10px;
 }
@@ -43,6 +37,12 @@ body {
    .cards {
      grid-template-columns: 1fr 1fr;
    }
+ header{
+  font-size: 1rem;
+}
+footer{
+ font-size: 0.5rem;
+}
  }
 
  @media only screen and (min-width: 37.5em) {
@@ -55,4 +55,5 @@ body {
    .cards {
      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
+   
   }
