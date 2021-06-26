@@ -1,9 +1,5 @@
 @media only screen and (min-width: 32.5em) {
 
-  header {
-    left: 15px;
-    resize: none;
-  }
   h1 {
     font-size: 2.5rem;
   }
@@ -11,19 +7,24 @@
   h2 {
     font-size: 1.5rem;
   }
-/*   
+
+
+  /*   
   header img {
     position: absolute;
     top: 5px;
     right: 15px;
   } */
   .mapouter {
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr;
-  }  
+  }
+
   .stats {
     position: absolute;
   }
+
+  /*************** start navigation ****************/
   .navigation {
     display: flex;
   }
@@ -32,14 +33,25 @@
     display: block;
     flex: 1 1 auto;
   }
+
   .navigation li:first-child {
     display: none;
   }
-  main {
-    padding: 50px;
+
+  .navigation a {
+    text-align: center;
   }
-  
-.imagesGallery {
-  grid-template-columns: 1fr 1fr;
-}
+
+  /**************** end navigation *****************/
+
+  .imagesGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flyer {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

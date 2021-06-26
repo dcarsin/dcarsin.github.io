@@ -21,17 +21,13 @@ document.querySelector('#date').innerHTML = fulldate;
 // }
 
 //5days Forecast and replace with the corresponding 5 days 3 letters that follows
-let lista = document.getElementsByClassName('col-head');
-let startDate = now.getDay();
-for (let i = 0; i < 5; i++) {
-    //lista[i].textContent = DaysWeek(startDate);   
-    lista[i] = DaysWeek(startDate);   
-    startDate++;
-    if (startDate == 8) {
-        startDate = 1;
-    }
+
+// toggleMenu
+function toggleMenu(){
+    document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
 }
 
+const startDate = now.getDay();
 // convert date number into 3 letters day
 function DaysWeek(dayNum){
     let returnDate;
@@ -45,7 +41,28 @@ function DaysWeek(dayNum){
     return returnDate;
 }
 
-// toggleMenu
-function toggleMenu(){
-    document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
+let test = [{pic:"cloudy.png",weather:"cloudy",temp:"90"},
+{pic:"rain.png",weather:"rain",temp:"80"},
+{pic:"snow.png",weather:"snow",temp:"40"},
+{pic:"sunny.png",weather:"sunny",temp:"75"},
+{pic:"sunnyRaining.png",weather:"sunnyRaining",temp:"79"}];
+
+for (let i = 0; i < test.length; i++) {
+    let divGridCol = document.createElement('div');
+    let span = document.createElement('span');
+    let img = document.createElement('img');
+    let spanData = document.createElement('span');
+
+    divGridCol.setAttribute('class', 'grid-col');
+    span.textContent = DaysWeek(i + 1);
+    img.setAttribute('src',`images/${test[i].pic}`);
+    img.setAttribute('alt',`image for ${test[i].weather}`);
+    spanData.setAttribute('class', 'data');
+    spanData.textContent = `${test[i].temp} F`; 
+
+
+    divGridCol.appendChild(span);
+    divGridCol.appendChild(img);
+    divGridCol.appendChild(spanData);
+    document.querySelector('div.grid').appendChild(divGridCol);
 }

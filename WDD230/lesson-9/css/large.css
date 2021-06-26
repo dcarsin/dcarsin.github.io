@@ -1,9 +1,5 @@
 @media only screen and (min-width: 64em) {
 
-  header {
-    size: 1.5rem;
-  }
-
   h1 {
     font-size: 2.5rem;
   }
@@ -16,12 +12,6 @@
     display: flex;
   }
 
-  .mapouter {
-    float: left;
-    width: auto;
-    margin-left: 6rem;
-    justify-self: center;
-  }
 
   .navigation li {
     display: block;
@@ -39,4 +29,14 @@
   figure img:hover {
     box-shadow: 0 0 30px rgb(31, 0, 0);
   }
+  
+#townsFromAPI {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  
+}
+
+.flyer {
+  grid-template-columns: 1fr;
+}
 }

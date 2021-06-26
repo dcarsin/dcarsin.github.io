@@ -11,28 +11,44 @@ header, main, footer {
   margin: 0 auto;
 }
 
-* {
-  margin: 0;
-  padding: 5px;
-  box-sizing: border-box;
+header img {
+  padding: 10px;
+  max-width: 140px;
 }
-main {
-  padding: 20px;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--headerFooter);
 }
-#mainPic{
-  padding: -5;
-  
+.headings{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
+
+.headings, footer{
+  color: var(--title);
+}
+
+header p{
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--headerFooter);
+}
+
 body {
   font-family: 'Merriweather+Sans', Helvetica, sans-serif;
-  ;
-  font-size: 18px;
 }
 
 html {
   background-color: var(--background);
-  margin: auto;
-}
+  }
 
 h1 {
   /* text-shadow: 2px 2px 5px red; */
@@ -41,46 +57,23 @@ h1 {
   margin: 0.2rem;
 }
 
-h2 {
-  font-size: 1rem;
-}
-
-#logoPic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--headerFooter);
-}
-
-footer {
-  padding: 10px;
-  text-align: center;
-  background-color: var(--headerFooter);
-  justify-items: center;
-}
-
-#company {
-  align-items: center;
-}
-
 .centrado {
   margin-top: 20px;
   margin: auto;
 }
 
+/*************** start navigation ****************/
 nav {
-  background-color: rgb(105, 157, 218);
   margin: 0 auto;
+  max-width: 960px;
+  background-color: rgb(105, 157, 218);
 }
 
 .navigation {
-  text-align: center;
+  /* text-align: center; */
   list-style: none;
   padding: 0;
-}
-
-.navigation a {
-  text-align: center;
+  margin: 0 auto;
 }
 
 .navigation li:first-child {
@@ -91,14 +84,25 @@ nav {
   display: none;
 }
 
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+  background-color: var(--background);
+}
+
 .responsive li {
   display: block;
 }
-
-header img {
-  width: 140px;
-  height: auto;
-}
+/**************** end navigation *****************/
 
 footer a, #lastUpdate {
   color: var(--title);
@@ -114,14 +118,14 @@ a:visited {
   color: var(--visited);
 }
 
-header li:hover {
-  background-color: var(--background);
-  font-weight: bold;
-}
 
 .herodiv {
   position: relative;
 }  
+
+.herodiv picture img{
+  max-height: 350px;
+}
 
 .stats {
 top: 50px;
@@ -130,6 +134,7 @@ background: radial-gradient(#eee, #4567aa);
 border: 1px solid #000;
 padding: 1.5rem;
 box-shadow: 0 0 30px #111;
+line-height: 0;
 }
 
 .stats .heroData{
@@ -142,9 +147,11 @@ box-shadow: 0 0 30px #111;
 	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
 }
 .grid-col {
+  font-weight: bold;
   background-color: #e0e0e0;
   border: 1px solid #333;
   text-align: center;
+  margin: 0 2px 0 2px;
 }
 
 .activities img{
@@ -153,7 +160,7 @@ box-shadow: 0 0 30px #111;
 }
 .grid img{
   width: 64px;
-  height: auto;
+	display: block;
 }
 .col-head {
 	display: block;
@@ -163,7 +170,7 @@ box-shadow: 0 0 30px #111;
 }
 .data {
 	display: block;
-	padding: 0 5px 5px;
+	padding: 5px;
 	font-size: 0.8rem;
 	text-align: center;
 }
@@ -173,23 +180,26 @@ aside {
 
 .mapouter {
   text-align: center;
-  padding: 20px;
+  background-color: rgb(105, 157, 218);
+  max-width: 960px;
+  margin: 0 auto;
+}
+.mapouter img {  
+  padding: 5px;
+  margin: auto;
+  width: fit-content;
 }
 
-.mapouter img{
-  float: left;
-  width: 100%;
-  margin-bottom: 20px;
+.social a{
+  color: #000;
 }
-
 .social img {
+  padding: 10px;
   width: 50px;
-  height: auto;
   margin: 0 10px 0 10px;
 }
 
 #contact {
-  content: center;
   text-align: center;
   margin: auto;
 }
@@ -200,7 +210,8 @@ img {
 }
 
 .active {
-    background-color: rgb(84, 172, 223);
+  
+  font-weight: bold;
 }
 
 /* lazy load */
@@ -236,3 +247,59 @@ img[data-src] {
   cursor: pointer;
   background-color:rgb(105, 157, 218);
  }
+ 
+h2 {text-align:left;
+margin-left: 20px;}
+
+#towns {
+	max-width: 960px;
+  margin: .5rem auto;
+	border:1px solid #bbb;
+  background-color: #eee;
+}
+
+article {
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+article:nth-child(odd) img {
+	grid-column: 2;
+}
+
+article:nth-child(odd) .data {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+img {
+  max-width: 240px;
+  margin: 0 auto;
+  align-items: center;
+  height: auto;
+}
+
+.data {
+  background-color:rgb(105, 157, 218);
+}
+p {padding: .75rem;}
+
+#townsFromAPI {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.flyer {
+  text-align: center;
+  background-color: rgb(105, 157, 218);
+  box-shadow: 8px 8px 8px #628ca6;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.7rem;  
+  border-radius: 20px;  }
+
+  .flyer p {
+    line-height: 0;
+  }
