@@ -8,13 +8,6 @@
     font-size: 1.5rem;
   }
 
-
-  /*   
-  header img {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-  } */
   .mapouter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,10 +36,6 @@
   }
 
   /**************** end navigation *****************/
-
-  .imagesGallery {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .flyer {
     align-items: center;
