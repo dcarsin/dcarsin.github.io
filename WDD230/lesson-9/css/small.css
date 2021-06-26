@@ -127,6 +127,9 @@ a:visited {
   max-height: 350px;
 }
 
+#townPic img{
+  max-width: 960px;
+}
 .stats {
 top: 50px;
 left: 50px;
