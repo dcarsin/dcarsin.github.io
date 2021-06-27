@@ -107,8 +107,6 @@ fetch(apiURL)
         document.querySelector('section.stats').appendChild(p5);
     })
 
-
-
 function windChill(temp, speed){
     let windChill = 35.74 + 0.6215 * temp + (0.4275 * temp - 35.75) * (speed)^0.16;
     return windChill;
