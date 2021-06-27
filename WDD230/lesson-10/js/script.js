@@ -14,7 +14,7 @@ function toggleMenu(){
 
 const cityId = "5604473";
 const appid = "5b50051966e4b3d19e4a0dbfa46385d8";
-const apiURL = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${appid}&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${appid}&units=imperial`;
 
 fetch(apiURL)
     .then((response) => {
