@@ -58,7 +58,7 @@ for (let i = 0; i < test.length; i++) {
     img.setAttribute('src',`images/${test[i].pic}`);
     img.setAttribute('alt',`image for ${test[i].weather}`);
     spanData.setAttribute('class', 'data');
-    spanData.textContent = `${test[i].temp} F`; 
+    spanData.textContent = `${test[i].temp}&deg; F`; 
 
 
     divGridCol.appendChild(span);
