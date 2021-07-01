@@ -11,11 +11,7 @@ fetch(url)
         const sortList = towns.filter((towns => towns.name == 'Soda Springs' || towns.name == 'Fish Haven' || towns.name == 'Preston'  ));
         // console.log(sortList);
         sortList.forEach(oneTown => {
-            let townName = oneTown.name;
-            townName = townName.replace(/\s+/g, '');
-            console.log("david");
-            console.log(townName);
-            let link = document.createElement('a');
+            // let link = document.createElement('a');
             let div = document.createElement('div');
             let image = document.createElement('img');
             let section = document.createElement('section');
@@ -25,7 +21,7 @@ fetch(url)
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
             
-            link.setAttribute('href',`${townName}.html`);
+            // link.setAttribute('href',`${townName}.html`);
             image.setAttribute('src',`images/${oneTown.photo}`);
             image.setAttribute('alt',`image for ${oneTown.name}`);
             div.setAttribute('class', 'flyer');
@@ -42,8 +38,8 @@ fetch(url)
             section.appendChild(p2);
             section.appendChild(p3);
             div.appendChild(section);
-            link.appendChild(div);
-            document.querySelector('#townsFromAPI').appendChild(link);
+            // link.appendChild(div);
+            document.querySelector('#townsFromAPI').appendChild(div);
         })
     });
     

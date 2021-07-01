@@ -13,30 +13,35 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="favicon.ico">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/fontload.js"></script>
+    <script defer src="js/lazyLoad.js"></script>
+    <script defer src="js/forms.js"></script>
+    <script defer src="js/townAPI.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div id="logoPic">
+        <picture>
             <img src="images/pngegg.png" alt="AcaWeather Site">
-            <div id="company">
-                <h1>AcaWeather</h1>
-                <p>The right weather for your new adventure</p>
-            </div>
-        </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="sodaSprings.html">Soda Springs</a></li>
-                <li><a href="fishHaven.html">Fish Haven</a></li>
-                <li><a href="stormCenter.html">Storm Center</a></li>
-                <li><a class="active" href="#">Gallery</a></li>
-            </ul>
-        </nav>
+        </picture>
+        <section class="headings">
+            <h1>AcaWeather</h1>
+            <p>The right weather for your new adventure</p>
+        </section>
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormCenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
         <aside>Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</aside>
         <form action="thanks.html">
@@ -47,24 +52,24 @@
                 </tr>
                 <tr>
                     <td><label for="email">Email:</label></td>
-                    <td><input  type="email" name="email" placeholder="name@domain.com" id="email">
+                    <td><input type="email" name="email" placeholder="name@domain.com" id="email">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="phone">Phone number:</label></td>
-                    <td><input  type="tel" name="phone" id="phone" required></td>
+                    <td><input type="tel" name="phone" id="phone" required></td>
                 </tr>
                 <tr>
                     <td><label for="zip">Zip code:</label></td>
-                    <td><input  type="number" name="zip" id="zip" required></td>
+                    <td><input type="number" name="zip" id="zip" required></td>
                 </tr>
                 <tr>
                     <td><label for="stormDate">Storm date:</label></td>
-                    <td><input  type="date" name="stormDate" id="stormDate"></td>
+                    <td><input type="date" name="stormDate" id="stormDate"></td>
                 </tr>
                 </tr>
                 <tr>
-                    <td><label for="stormType" >Storm type:</label></td>
+                    <td><label for="stormType">Storm type:</label></td>
                     <td><input list="list" id="stormType">
                         <datalist id="list">
                             <option value="Flash Flood"></option>
@@ -127,10 +132,6 @@
         <div id="date"></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
-    <script src="js/script.js"></script>
-    <script src="js/fontload.js"></script>
-    <script src="js/lazyLoad.js"></script>
-    <script src="js/forms.js"></script>
 </body>
 
 </html>
