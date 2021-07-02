@@ -5,7 +5,9 @@
   --visitedFooter: #e0d252;
   --visited: #002088;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Merriweather+Sans', Helvetica, sans-serif;
 }
@@ -354,16 +356,12 @@ form select {
   width: 100%;
 }
 
-form textarea, input {
-  width: 97%;
+form textarea, input, #stormDate {
+  width: 100%;
 }
 
 form #rating {
   width: 88%;
-}
-
-form #stormDate {
-  width: 98%;
 }
 
 .hide {
