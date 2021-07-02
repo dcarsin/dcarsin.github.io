@@ -1,5 +1,5 @@
 @media only screen and (min-width: 32.5em) {
-
+ 
   h1 {
     font-size: 2.5rem;
   }
@@ -40,6 +40,11 @@
   .flyer {
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .imagesGallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
