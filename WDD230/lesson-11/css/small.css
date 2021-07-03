@@ -50,7 +50,7 @@ main {
 .headings {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .headings,
@@ -68,8 +68,12 @@ footer {
 h1 {
   /* text-shadow: 2px 2px 5px red; */
   color: var(--title);
-  text-align: center;
+  margin: 10px;
 
+  text-align: center;
+}
+#thanks h1{
+  color: #000;
 }
 
 /* .centrado {
@@ -374,8 +378,6 @@ figure img {
   max-width: 240px;
   max-height: 135px;
   margin: 0 auto;
-  align-items: center;
-  height: auto;
 }
 
 img {

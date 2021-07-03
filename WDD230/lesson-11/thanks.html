@@ -15,14 +15,15 @@
     <link rel="shortcut icon" href="favicon.ico">
     <script defer src="js/script.js"></script>
     <script defer src="js/fontload.js"></script>
-    <script defer src="js/townAPI.js"></script>
+    <script defer src="js/lazyLoad.js"></script>
+    <script defer src="js/forms.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <picture>
-            <img src="images/pngegg.png" alt="AcaWeather Logo">
+            <img src="images/pngegg.png" alt="AcaWeather Site">
         </picture>
         <section class="headings">
             <h1>AcaWeather</h1>
@@ -42,23 +43,9 @@
     </nav>
     <main>
         <aside>Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</aside>
-        <div class="herodiv"></div>
-        <div id="townsFromAPI"></div>
-        <section class="mapouter">
-            <img src="images/prestonMap.png" alt="Preston Map">
-            <div class="social">
-                <h3>Contact Information</h3>
-                <p> West Oneida<br> Preston, ID 83263<br>
-                    <strong>Phone:</strong> (208) 852-1817<br>
-                    <strong>Fax:</strong> (208) 852-1820<br>
-                    <strong>Email:</strong><a href="mailto:info@prestonid.us">info@prestonid.us</a>
-                </p>
-                <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="facebook icon"></a>
-                <a href="https://www.twitter.com/"><img src="images/Twitter.png" alt="twitter icon"></a>
-                <a href="https://www.instagram.com/"><img src="images/Instagram_icon.png" alt="instagram icon"></a>
-
-            </div>
-        </section>
+        <div id="thanks">
+            <h1>Thanks you for reporting this!</h1>
+        </div>
     </main>
     <footer>
         <div id="year"></div>
@@ -66,4 +53,5 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
 </body>
+
 </html>
