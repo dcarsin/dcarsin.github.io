@@ -11,7 +11,7 @@ if (actualTown == "sodaSprings"){
   changeImage.setAttribute('src', 'images/sodaSpringMap.png');  // focus on the setAttribute() method
   changeImage.setAttribute('alt', 'Soda Spring Map');
 } else if (actualTown == "fishHaven"){
-  cityId = "5604473";
+  cityId = "5585000";
   changeImage.setAttribute('src', 'images/fishHavenMap.png');  // focus on the setAttribute() method
   changeImage.setAttribute('alt', 'Fish Haven Map');
 } 
@@ -27,7 +27,7 @@ fetch(apiURL)
         return response.json()
     })
     .then((jsonData) => {
-        // console.log(jsonData);
+        console.log(jsonData);
         let daysWeeks = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
         const sortList = jsonData.list.filter( forecast => forecast.dt_txt.includes('18:00:00'));
         console.log(sortList);

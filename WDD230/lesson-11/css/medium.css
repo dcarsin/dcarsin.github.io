@@ -17,6 +17,15 @@
     position: absolute;
   }
 
+  /* .grid-col {
+    font-weight: bold;
+    background-color: #e0e0e0;
+    border: 1px solid #333;
+    text-align: center;
+    margin: 0 2px 0 2px;
+    border-radius: 5px;
+    padding: 5px;
+  } */
   /*************** start navigation ****************/
   .navigation {
     display: flex;
