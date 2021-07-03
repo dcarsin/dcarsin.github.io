@@ -5,8 +5,7 @@ fetch(url)
         return response.json()
     })
     .then((jsonData) => {
-        console.log(jsonData);
-
+        // console.log(jsonData);
         const towns = jsonData['towns'];
         const sortList = towns.filter((towns => towns.name == 'Soda Springs' || towns.name == 'Fish Haven' || towns.name == 'Preston'  ));
         // console.log(sortList);
@@ -21,6 +20,7 @@ fetch(url)
             let p3 = document.createElement('p');
             
             image.setAttribute('src',`images/${oneTown.photo}`);
+            // console.log(oneTown.photo);
             image.setAttribute('alt',`image for ${oneTown.name}`);
             div.setAttribute('class', 'flyer');
             h3.textContent = `${oneTown.name}`; 
