@@ -1,10 +1,10 @@
 const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
 
-let page = location.pathname;           console.log(page);
-let actualPage = page.split('/');       console.log(actualPage);
-let active = actualPage[3];         console.log(active);
-cutTown = active.split('.html');       console.log(cutTown);
-active = cutTown[0];
+let page = location.pathname;           
+let actualPage = page.split('/');       
+let active = actualPage[3];         
+let cutTown1 = active.split('.html');
+active = cutTown1[0];
 console.log(active);
 let lookingFor;
 if (active == "sodaSprings"){
