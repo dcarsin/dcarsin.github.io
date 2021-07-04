@@ -223,6 +223,7 @@ a {
   background-color: rgb(105, 157, 218);
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .mapouter img {
@@ -402,6 +403,8 @@ aside, #localEvent{
 }
 #localEvent {
   line-height: 0%;
+  max-width: 480px;
+  margin: 0 auto;
   border: 1px solid #333;
 }
 #ratingvalue {
