@@ -8,12 +8,8 @@ let changeImage = document.getElementsByClassName('mapouter')[0].getElementsByTa
 let cityId = "5604473";
 if (actualTown == "sodaSprings"){
   cityId = "5607916";
-  changeImage.setAttribute('src', 'images/sodaSpringMap.png');  // focus on the setAttribute() method
-  changeImage.setAttribute('alt', 'Soda Spring Map');
 } else if (actualTown == "fishHaven"){
   cityId = "5585000";
-  changeImage.setAttribute('src', 'images/fishHavenMap.png');  // focus on the setAttribute() method
-  changeImage.setAttribute('alt', 'Fish Haven Map');
 } 
 console.log(cityId);
 

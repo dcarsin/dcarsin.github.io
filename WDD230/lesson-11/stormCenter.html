@@ -37,7 +37,7 @@
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodaSprings.html">Soda Springs</a></li>
             <li><a href="fishHaven.html">Fish Haven</a></li>
-            <li><a href="stormCenter.html">Storm Center</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
@@ -66,7 +66,6 @@
                     <td><label for="stormDate">Storm date:</label></td>
                     <td><input type="date" name="stormDate" id="stormDate"></td>
                 </tr>
-                </tr>
                 <tr>
                     <td><label for="stormType">Storm type:</label></td>
                     <td><input list="list" id="stormType">
@@ -80,12 +79,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="radioOpt" class="flexly" for="rating">Storm severity:</td>
+                    <td><label class="flexly" for="rating">Storm severity:</label></td>
                     <td><input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span>
-                        </label>
-                        <div class="hide"><datalist id="tickmarks">
+                        <div class="hide">
+                            <datalist id="tickmarks">
                                 <option value="0">
                                 <option value="1">
                                 <option value="2">
@@ -111,20 +110,12 @@
                         </select></td>
                 </tr>
                 <tr>
-                    <td><label for="radioOptions">User in-danger level:</label></td>
                     <td>
-                        <div class="radiosBtn">
-                            <input type="radio" id="yes" name="radioOptions" value="yes">
-                            <label for="yes">Yes</label>
-                        </div>
-                        <div class="radiosBtn">
-                            <input type="radio" id="maybe" name="radioOptions" value="maybe">
-                            <label for="maybe">Maybe</label>
-                        </div>
-                        <div class="radiosBtn">
-                            <input type="radio" id="no" name="radioOptions" value="no">
-                            <label for="no">No</label>
-                        </div>
+                        <label>User in-danger level:</label></td>
+                    <td>
+                        <label class="radio"><input type="radio" name="dangerLevel" value="yes">Yes</label>
+                        <label class="radio"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+                        <label class="radio"><input type="radio" name="dangerLevel" value="no">No</label>
                     </td>
                 </tr>
                 <tr>
@@ -137,7 +128,7 @@
                     </td>
                 </tr>
             </table>
-            
+
         </form>
     </main>
     <footer>

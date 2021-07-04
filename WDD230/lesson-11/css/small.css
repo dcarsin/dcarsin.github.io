@@ -2,7 +2,7 @@
   --title: rgb(255, 255, 255);
   --headerFooter: #334a6e;
   --background: #dbdbdb;
-  --visitedFooter: #e0d252;
+  --visitedFooter: #84FA9D;
   --visited: #002088;
 }
 * {
@@ -245,11 +245,9 @@ aside {
   margin: 0 10px 0 10px;
 }
 
-
-/* 
 .active {
-  font-weight: bold;
-} */
+  background-color: #bbb;  
+}
 
 .imagesGallery {
   display: grid;
@@ -351,7 +349,7 @@ form button {
   margin-top: 2em;
 }
 
-.radiosBtn {
+form .radiosBtn {
   display: inline-block;
   margin-left: 0.8em;
 }
@@ -391,4 +389,29 @@ section img {
 
 #centerForm {
   align-items: center;
+}
+
+aside{
+  margin: 25px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #bbb;
+  max-width: 960px;
+  border-radius: 2em;
+}
+
+#ratingvalue {
+  color: #002088;
+  font-weight: bold;
+  
+}
+
+.radio {
+  margin-right: 0.5rem;
+}
+
+.radio input {
+  width: auto;
+  margin-left: 10px;
 }
