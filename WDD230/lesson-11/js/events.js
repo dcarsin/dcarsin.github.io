@@ -28,7 +28,6 @@ fetch(url)
                 let p2 = document.createElement('p');
                 let p3 = document.createElement('p');
                 if (oneTown.events[0]){   
-                    console.log("entro...");
                     h3.textContent = `Upcoming Events`;
                     (oneTown.events[0]) ? p1.textContent = `${oneTown.events[0]}`:  p1.textContent = ``;
                     (oneTown.events[1]) ? p2.textContent = `${oneTown.events[1]}` : p2.textContent = ``;
