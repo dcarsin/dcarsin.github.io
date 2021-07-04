@@ -3,15 +3,13 @@ let actualTown = location.pathname;
 let cutTown = actualTown.slice(1).split('.html');
 actualTown = cutTown[0];
 // console.log(actualTown);
-let changeImage = document.getElementsByClassName('mapouter')[0].getElementsByTagName('img')[0];
-// console.log(changeImage);
 let cityId = "5604473";
 if (actualTown == "sodaSprings"){
   cityId = "5607916";
 } else if (actualTown == "fishHaven"){
   cityId = "5585000";
 } 
-console.log(cityId);
+// console.log(cityId);
 
 const appid = "5b50051966e4b3d19e4a0dbfa46385d8";
 const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${appid}&units=imperial`;

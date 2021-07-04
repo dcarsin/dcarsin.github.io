@@ -218,10 +218,6 @@ a {
   text-align: center;
 }
 
-aside {
-  display: none;
-}
-
 .mapouter {
   text-align: center;
   background-color: rgb(105, 157, 218);
@@ -391,7 +387,11 @@ section img {
   align-items: center;
 }
 
-aside{
+aside {
+  display: none;
+}
+
+aside, #localEvent{
   margin: 25px;
   padding: 10px;
   font-weight: bold;
@@ -400,7 +400,10 @@ aside{
   max-width: 960px;
   border-radius: 2em;
 }
-
+#localEvent {
+  line-height: 0%;
+  border: 1px solid #333;
+}
 #ratingvalue {
   color: #002088;
   font-weight: bold;
