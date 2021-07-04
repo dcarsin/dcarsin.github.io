@@ -1,4 +1,4 @@
-const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
+const url2 = 'https://byui-cit230.github.io/weather/data/towndata.json'
 actualTown = location.pathname;
 cutTown = actualTown.slice(1).split('.html');
 actualTown = cutTown[0];
@@ -11,7 +11,7 @@ if (actualTown == "sodaSprings"){
     lookingFor = 'Preston';
 }    
 console.log(lookingFor);
-fetch(url)
+fetch(url2)
     .then((response) => {
         return response.json()
     })
