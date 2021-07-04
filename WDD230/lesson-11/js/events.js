@@ -1,4 +1,3 @@
-const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
 actualTown = location.pathname;
 cutTown = actualTown.slice(1).split('.html');
 actualTown = cutTown[0];
