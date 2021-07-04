@@ -2,8 +2,7 @@
   --title: rgb(255, 255, 255);
   --headerFooter: #334a6e;
   --background: #dbdbdb;
-  --visitedFooter: #84FA9D;
-  --visited: #002088;
+  --visited: #84FA9D;
 }
 * {
   box-sizing: border-box;
@@ -126,11 +125,6 @@ nav {
 /* footer a, #lastUpdate {
   color: var(--title);
 } */
-
-/* visited link */
-footer a:visited {
-  color: var(--visitedFooter);
-}
 
 /* visited link */
 a:visited {
