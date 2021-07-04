@@ -1,9 +1,33 @@
-
+const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
 actualTown = location.pathname;
 cutTown = actualTown.slice(1).split('.html');
 actualTown = cutTown[0];
-console.log(actualTown);
-const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
+if (actualTown != 'index') {
+    let lookingFor = '';
+    if (actualTown == "sodaSprings"){
+        lookingFor = 'Soda Springs';
+    } else if (actualTown == "fishHaven"){
+        lookingFor = 'Fish Haven';
+    } else if (actualTown == "preston"){
+        lookingFor = 'Preston';
+    }    
+    fetch(url)
+        .then((response) => { 
+        return response.json()
+        })
+        .then((jsonData) => {
+            // console.log(jsonData);
+            const towns = jsonData['towns'];
+            const sortList = towns.filter((towns => towns.name == 'Soda Springs' || towns.name == 'Fish Haven' || towns.name == 'Preston'  ));
+            sortList.forEach(oneTown => {
+                if (oneTown.name == lookingFor) {
+                    document.getElementById('event1').textContent = `${oneTown.events[0]}`;
+                    document.getElementById('event2').textContent = `${oneTown.events[1]}`;
+                    document.getElementById('event3').textContent = `${oneTown.events[2]}`;
+                }
+            });
+        });
+    } else {
 
 fetch(url)
     .then((response) => {
@@ -44,33 +68,4 @@ fetch(url)
             document.querySelector('#townsFromAPI').appendChild(div);
         }) 
     });
-    
-actualTown = location.pathname;
-cutTown = actualTown.slice(1).split('.html');
-actualTown = cutTown[0];
-if (actualTown != 'index') {
-    let lookingFor = '';
-    if (actualTown == "sodaSprings"){
-        lookingFor = 'Soda Springs';
-    } else if (actualTown == "fishHaven"){
-        lookingFor = 'Fish Haven';
-    } else if (actualTown == "preston"){
-        lookingFor = 'Preston';
-    }    
-    fetch(url)
-        .then((response) => { 
-        return response.json()
-        })
-        .then((jsonData) => {
-            // console.log(jsonData);
-            const towns = jsonData['towns'];
-            const sortList = towns.filter((towns => towns.name == 'Soda Springs' || towns.name == 'Fish Haven' || towns.name == 'Preston'  ));
-            sortList.forEach(oneTown => {
-                if (oneTown.name == lookingFor) {
-                    document.getElementById('event1').textContent = `${oneTown.events[0]}`;
-                    document.getElementById('event2').textContent = `${oneTown.events[1]}`;
-                    document.getElementById('event3').textContent = `${oneTown.events[2]}`;
-                }
-            });
-        });
-    }
+}
