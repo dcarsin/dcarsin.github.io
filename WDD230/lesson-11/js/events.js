@@ -3,8 +3,7 @@ const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
 let page = location.pathname;           console.log(page);
 let actualPage = page.split('/');       console.log(actualPage);
 let actualTown = actualPage[3];         console.log(actualTown);
-let cutTown = actualTown.slice(1).split('.html');       console.log(cutTown);
-
+let cutTown = actualTown.split('.html');       console.log(cutTown);
 actualTown = cutTown[0];
 console.log(actualTown);
 let lookingFor;
