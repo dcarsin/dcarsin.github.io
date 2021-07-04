@@ -21,9 +21,6 @@ fetch(url)
         const sortList = towns.filter((towns => towns.name == 'Soda Springs' || towns.name == 'Fish Haven' || towns.name == 'Preston'  ));
         sortList.forEach(oneTown => {
             if (oneTown.name == lookingFor) {
-                console.log(oneTown.events[0]);
-                console.log(oneTown.events[1]);
-                console.log(oneTown.events[2]);
                 document.getElementById('event1').textContent = `${oneTown.events[0]}`;
                 document.getElementById('event2').textContent = `${oneTown.events[1]}`;
                 document.getElementById('event3').textContent = `${oneTown.events[2]}`;

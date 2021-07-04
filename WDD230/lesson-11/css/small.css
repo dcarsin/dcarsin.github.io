@@ -127,7 +127,7 @@ nav {
 } */
 
 /* visited link */
-a:visited {
+footer a:visited {
   color: var(--visited);
 }
 
