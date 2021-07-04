@@ -5,7 +5,7 @@ actualTown = actualPage[2];
 cutTown = actualTown.slice(1).split('.html');
 actualTown = cutTown[0];
 console.log(actualTown);
-
+let lookingFor;
 if (actualTown == "sodaSprings"){
     lookingFor = 'Soda Springs';
 } else if (actualTown == "fishHaven"){
