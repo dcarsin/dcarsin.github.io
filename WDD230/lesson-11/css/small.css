@@ -138,14 +138,14 @@ footer a:visited {
 .herodiv {
   position: relative;
 }
-
+.herodiv picture img {
+  max-height: 330px;
+}
 a {
   text-decoration: none;
 }
 
-.herodiv picture img {
-  max-height: 330px;
-}
+
 
 #townPic img {
   max-width: 960px;

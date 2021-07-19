@@ -1,0 +1,41 @@
+@media only screen and (min-width: 50em) {
+
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mainLogo {
+    min-width: 60%;
+    height: auto;
+}
+    /*************** start navigation ****************/
+    .navigation {
+      display: flex;
+    }
+  
+  
+    .navigation li {
+      display: block;
+      flex: 1 1 auto;
+    }
+  
+    .navigation li:first-child {
+      display: none;
+    }
+  
+    .imagesGallery {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    /**************** end navigation *****************/
+  
+    
+  }
+  
