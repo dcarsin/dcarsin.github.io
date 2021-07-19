@@ -1,0 +1,94 @@
+{
+  "business": [
+    {
+      "name": "Liga América Uruguay",
+      "address": "Route 8 Km 15.500",
+      "zip": 91600,
+	  "pic": "ligaamerica",
+	  "logo": "@Ligamerica - Sporting ligue",
+      "website": "http://www.ligaamerica.com.uy/",
+      "sort-description": "Liga America was created with the objective of promoting the practice of soccer in our community as a healthy activity in an environment of responsible competition, emphasizing Fair Play and respect for our rivals.",
+      "description": [
+        "It takes its name in honor of the champions of America in 2011 and all the heroes who made the light blue jersey the most winning jersey in our continent.",
+        "Our commitment is to ensure a space for fun, social gathering and competitiveness so that those who choose us can enjoy the sport in all its splendor.",
+		"Liga América not only seeks to be a first class soccer tournament, but also a meeting place for family and friends.",
+        "In the country that has won the most championships in America, we play for the love of the jersey, that's "]
+    },
+	{
+      "name": "Italcar uy",
+      "address": "Av. José Belloni 4892",
+      "zip": 13000,
+	  "pic": "italcar",
+	  "logo": "@italcaruy - Oil and Filter Change Service",
+      "website": "https://www.facebook.com/italcaruy/",
+      "sort-description": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check."
+    },
+	{
+      "name": "Team Rentacar",
+      "address": "Luis Sambucetti 2668",
+      "zip": 11600,
+	  "pic": "team",
+	  "logo": "Just choose the destination, we'll take care of the rest.",
+      "website": "https://teamrentacar.com.uy/",
+      "sort-description": "A small business, 100% Uruguayan-owned company dedicated to the rental of vehicles without drivers.",
+      "description": [ "DANOTIL S. A. was created at the beginning of 2008 from an idea of two friends who wanted to undertake a new commercial challenge. From that moment on, and changing ideas with our friends, the name TEAM RENT A CAR was born. Identifying ourselves since from our beginnings if something we wanted to form was a great team.",
+	  "As a typical Uruguayan company that is going to start a new activity in a very cautious way and with a lot of expectation we took the first step by buying our first 8 cars. With dedication and effort, firmly believing in our idea and team, we began to project ourselves into the future.",
+	  "We undertook an uninterrupted growth until today we have a fleet of more than 180 cars. Accompanying this growth we inaugurated a new commercial premises located in Parque Batlle with 580 m2 suitable for a better service and attention to our customers. We strive to give our vehicles the best maintenance for the safety and tranquility of our users. We have a wide network of workshops all over the country, being able to assure our customers a quick response and solution to their problems.",
+	  "We are totally convinced that such growth is based on our values where the most important thing is to achieve the satisfaction of our customers. For this we have an excellent work team, with the greatest dedication and effort, which is permanently in training plans to provide the best service. Our services are hired by national and foreign individuals and legal entities. ",
+	  "Many first class companies trust in our services and we wish to count you among our clients."]
+    },{
+      "name": "Zonamerica",
+      "address": "Route 8 Km 17.200",
+      "zip": 91600,
+	  "pic": "zonamerica",
+	  "logo": "A company specialized in the creation of highly competitive business platforms.",
+      "website": "https://web.zonamerica.com/",
+      "sort-description": "Zonamerica is a Business and Technology park in Uruguay operating under the Free Zone Law since 1990. In 2019, some 10,000 people in 350 companies work in 30 buildings in Zonamerica. The same year, there are more than 90,000 sq mt built areas, of which 88% are shared and rented areas. A global survey showed a 93% of satisfaction among the Zonamerica's companies",
+      "description": [ "Our clients are in the world and our know-how is about business in the world. Therefore, we have expanded Zonamerica's horizons, investing in new operations in Colombia and China, with different models of insertion in those markets.",
+	  "In Colombia, we partnered with Grupo Carvajal, one of the most important business groups in that country, and in October 2018 we inaugurated the first Zonamerica Colombia building.",
+	  "In China, which has become Latin America's main trading partner, we opened a representative office in Foshan, developing a commercial bridge between the Asian giant and our continent.",
+	  "In Uruguay, we have made significant progress in the design and approval process of an urban development on Altenix SA land, adjacent to Zonamerica, consolidating our project and links with the city and neighboring developments.",
+	  "At Zonamerica Uruguay, we have once again entered the local stock market through a debt issuance, thereby reducing the group's cost of capital.",
+	  "To this end, we have restructured the company by empowering each project (Zonamerica China, Zonamerica Colombia, Zonamerica Uruguay and Altenix) with a top-level professional team, improving the monitoring and control of the management and financial indicators of each project.",
+	  "Our mission, our sense of urgency and our vocation to offer high quality services to our clients and to be at the forefront, guide us and will guide us on this path. All within a responsible and ethical environment, maintaining our reputation at the highest levels."]
+    },{
+      "name": "Rural del Prado",
+      "address": "Av. Lucas Obes 1010",
+      "zip": 11700,
+	  "pic": "rural",
+	  "logo": "Constant development, seeking satisfaction and fulfillment: personal and professional.",
+      "website": "https://www.expoprado.com/",
+      "sort-description": "La Rural del Prado is an agro-industrial exhibition organized by the Rural Association of Uruguay, held in September at the Rural del Prado, in the city of Montevideo.",
+      "description": [ "We are already preparing the 116th edition of Expo Prado, the International International Livestock Livestock and Agro-Industrial Industrial and Commercial Show to be held will be held from September 10 to 19, 2021. September 10-19, 2021.",
+	  "It is the largest event in the country country, where the best genetics are exhibited genetics through the main breeders of main breeders of equine, bovine, ovine equine, bovine, ovine, goat, swine, and the most goats, pigs, and the most important and the most outstanding in poultry and rabbit breeding.",
+	  "It is the event that brings together the most significant of the agro-industrial and livestock agro-industrial and livestock and livestock sector, and where the most renowned companies.",
+	  "The countryside and tradition, breeding stock awards, machinery exhibition, the most advanced the most advanced in technology, products, contests, conferences, business, astronomy.",
+	  "Undoubtedly, it is the ideal place for commercial launches commercial launches, promotional promotional activities, sales promotions promotions, exhibitions and product and product showcases.",
+	  "It is the perfect space to publicize and and promote your brand, the excellent environment to to make good business deals. Renewed in infrastructure and logistics, Expo Prado improves grows and strengthens year after year"
+  ]
+    },{
+      "name": "CCJ",
+      "address": "Route 8 Km 17.000",
+      "zip": 12200,
+	  "pic": "jacksonville",
+	  "logo": "Empowering talents, multiplying experiences.",
+      "website": "http://www.ccj.edu.uy/",
+      "sort-description": "Empowering talents, multiplying experiences.",
+      "description": [ "MISSION: To develop and promote training proposals and cultural activities that allow the application of new talents and skills to the requirements of the most prestigious and internationalized companies in the market.",
+	  "VISION: To be a local Foundation with an international outlook, which is highly linked to the demanding and prestigious labor market, knowing the training needs of the people who work in these companies and developing innovative programs, which allow bridging the gap between personal skills and those required by the job."
+  ]
+    },{
+      "name": "Embassy of the United States",
+      "address": "Dr. Lauro Müller 1776",
+      "zip": 11200,
+	  "pic": "embassy",
+	  "logo": "Supporting and Promoting U.S. business in Uruguay",
+      "website": "https://uy.usembassy.gov/business/",
+      "sort-description": "Supporting and promoting U.S. business in Uruguay is one of Embassy Montevideo’s highest priorities.",
+      "description": [ "Uruguay is a growing economy situated in one of the more dynamic regions of South America. U.S. companies continue to take advantage of Uruguay’s favorable investment climate and its strong links with its neighbors in the South American Common Market (MERCOSUR), a region with high economic growth and a population of over 250 million people.",
+	  "The Economic and Commercial Section of the U.S. Embassy in Montevideo stands ready to assist your company or organization to explore this market, and we hope you find useful the many tools and links included in this website.",
+	  "Please feel free to contact us at any time using the contact information to the right.  Thank you."
+  ]
+    }
+  ]
+}
