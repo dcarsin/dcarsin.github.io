@@ -2,8 +2,6 @@
 //add day data into footer
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-console.log("now",now.getMonth());
-console.log("fulldate",fulldate.getMonth());
 
 document.querySelector('#footerData').innerHTML = `${fulldate} - &copy;`+ new Date().getFullYear() + ` David Carsin - Uruguay - <a href="https://www.byui.edu/online">BYU-Idaho Online
 Learning</a>`;

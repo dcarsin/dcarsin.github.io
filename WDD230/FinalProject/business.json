@@ -23,21 +23,20 @@
 	  "motto": "@italcaruy - Oil and Filter Change Service",
       "website": "https://www.facebook.com/italcaruy/",
       "descriptionSort": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check.",
-      "event": {"month": 7, "date": 28}
-    },
-	{
-      "name": "Team Rentacar",
-      "address": "Luis Sambucetti 2668",
-      "zip": 11600,
-	  "pic": "team",
-	  "motto": "Just choose the destination, we'll take care of the rest.",
-      "website": "https://teamrentacar.com.uy/",
-      "descriptionSort": "A small business, 100% Uruguayan-owned company dedicated to the rental of vehicles without drivers.",
-      "description": [ "DANOTIL S. A. was created at the beginning of 2008 from an idea of two friends who wanted to undertake a new commercial challenge. From that moment on, and changing ideas with our friends, the name TEAM RENT A CAR was born. Identifying ourselves since from our beginnings if something we wanted to form was a great team.",
-	  "As a typical Uruguayan company that is going to start a new activity in a very cautious way and with a lot of expectation we took the first step by buying our first 8 cars. With dedication and effort, firmly believing in our idea and team, we began to project ourselves into the future.",
-	  "We undertook an uninterrupted growth until today we have a fleet of more than 180 cars. Accompanying this growth we inaugurated a new commercial premises located in Parque Batlle with 580 m2 suitable for a better service and attention to our customers. We strive to give our vehicles the best maintenance for the safety and tranquility of our users. We have a wide network of workshops all over the country, being able to assure our customers a quick response and solution to their problems.",
-	  "We are totally convinced that such growth is based on our values where the most important thing is to achieve the satisfaction of our customers. For this we have an excellent work team, with the greatest dedication and effort, which is permanently in training plans to provide the best service. Our services are hired by national and foreign individuals and legal entities. ",
-	  "Many first class companies trust in our services and we wish to count you among our clients."]
+      "event": {"month": 11, "date": 28}
+    },{
+      "name": "Embassy of the United States",
+      "address": "Dr. Lauro Müller 1776",
+      "zip": 11200,
+	  "pic": "embassy",
+	  "motto": "Supporting and Promoting U.S. business in Uruguay",
+      "website": "https://uy.usembassy.gov/business/",
+      "descriptionSort": "Supporting and promoting U.S. business in Uruguay is one of Embassy Montevideo’s highest priorities.",
+      "description": [ "Uruguay is a growing economy situated in one of the more dynamic regions of South America. U.S. companies continue to take advantage of Uruguay’s favorable investment climate and its strong links with its neighbors in the South American Common Market (MERCOSUR), a region with high economic growth and a population of over 250 million people.",
+	  "The Economic and Commercial Section of the U.S. Embassy in Montevideo stands ready to assist your company or organization to explore this market, and we hope you find useful the many tools and links included in this website.",
+	  "Please feel free to contact us at any time using the contact information to the right.  Thank you."
+  ],
+  "event": {"month": 7, "date": 31}
     },{
       "name": "Zonamerica",
       "address": "Route 8 Km 17.200",
@@ -52,7 +51,8 @@
 	  "In Uruguay, we have made significant progress in the design and approval process of an urban development on Altenix SA land, adjacent to Zonamerica, consolidating our project and links with the city and neighboring developments.",
 	  "At Zonamerica Uruguay, we have once again entered the local stock market through a debt issuance, thereby reducing the group's cost of capital.",
 	  "To this end, we have restructured the company by empowering each project (Zonamerica China, Zonamerica Colombia, Zonamerica Uruguay and Altenix) with a top-level professional team, improving the monitoring and control of the management and financial indicators of each project.",
-	  "Our mission, our sense of urgency and our vocation to offer high quality services to our clients and to be at the forefront, guide us and will guide us on this path. All within a responsible and ethical environment, maintaining our reputation at the highest levels."]
+	  "Our mission, our sense of urgency and our vocation to offer high quality services to our clients and to be at the forefront, guide us and will guide us on this path. All within a responsible and ethical environment, maintaining our reputation at the highest levels."],
+    "event": {"month": 7, "date": 27}
     },{
       "name": "Rural del Prado",
       "address": "Av. Lucas Obes 1010",
@@ -67,7 +67,8 @@
 	  "The countryside and tradition, breeding stock awards, machinery exhibition, the most advanced the most advanced in technology, products, contests, conferences, business, astronomy.",
 	  "Undoubtedly, it is the ideal place for commercial launches commercial launches, promotional promotional activities, sales promotions promotions, exhibitions and product and product showcases.",
 	  "It is the perfect space to publicize and and promote your brand, the excellent environment to to make good business deals. Renewed in infrastructure and logistics, Expo Prado improves grows and strengthens year after year"
-  ]
+  ],
+  "event": {"month": 10, "date": 7}
     },{
       "name": "CCJ",
       "address": "Route 8 Km 17.000",
@@ -78,19 +79,22 @@
       "descriptionSort": "Empowering talents, multiplying experiences.",
       "description": [ "MISSION: To develop and promote training proposals and cultural activities that allow the application of new talents and skills to the requirements of the most prestigious and internationalized companies in the market.",
 	  "VISION: To be a local Foundation with an international outlook, which is highly linked to the demanding and prestigious labor market, knowing the training needs of the people who work in these companies and developing innovative programs, which allow bridging the gap between personal skills and those required by the job."
-  ]
+  ],
+  "event": {"month": 9, "date": 1}
     },{
-      "name": "Embassy of the United States",
-      "address": "Dr. Lauro Müller 1776",
-      "zip": 11200,
-	  "pic": "embassy",
-	  "motto": "Supporting and Promoting U.S. business in Uruguay",
-      "website": "https://uy.usembassy.gov/business/",
-      "descriptionSort": "Supporting and promoting U.S. business in Uruguay is one of Embassy Montevideo’s highest priorities.",
-      "description": [ "Uruguay is a growing economy situated in one of the more dynamic regions of South America. U.S. companies continue to take advantage of Uruguay’s favorable investment climate and its strong links with its neighbors in the South American Common Market (MERCOSUR), a region with high economic growth and a population of over 250 million people.",
-	  "The Economic and Commercial Section of the U.S. Embassy in Montevideo stands ready to assist your company or organization to explore this market, and we hope you find useful the many tools and links included in this website.",
-	  "Please feel free to contact us at any time using the contact information to the right.  Thank you."
-  ]
+      "name": "Team Rentacar",
+      "address": "Luis Sambucetti 2668",
+      "zip": 11600,
+	  "pic": "team",
+	  "motto": "Just choose the destination, we'll take care of the rest.",
+      "website": "https://teamrentacar.com.uy/",
+      "descriptionSort": "A small business, 100% Uruguayan-owned company dedicated to the rental of vehicles without drivers.",
+      "description": [ "DANOTIL S. A. was created at the beginning of 2008 from an idea of two friends who wanted to undertake a new commercial challenge. From that moment on, and changing ideas with our friends, the name TEAM RENT A CAR was born. Identifying ourselves since from our beginnings if something we wanted to form was a great team.",
+	  "As a typical Uruguayan company that is going to start a new activity in a very cautious way and with a lot of expectation we took the first step by buying our first 8 cars. With dedication and effort, firmly believing in our idea and team, we began to project ourselves into the future.",
+	  "We undertook an uninterrupted growth until today we have a fleet of more than 180 cars. Accompanying this growth we inaugurated a new commercial premises located in Parque Batlle with 580 m2 suitable for a better service and attention to our customers. We strive to give our vehicles the best maintenance for the safety and tranquility of our users. We have a wide network of workshops all over the country, being able to assure our customers a quick response and solution to their problems.",
+	  "We are totally convinced that such growth is based on our values where the most important thing is to achieve the satisfaction of our customers. For this we have an excellent work team, with the greatest dedication and effort, which is permanently in training plans to provide the best service. Our services are hired by national and foreign individuals and legal entities. ",
+	  "Many first class companies trust in our services and we wish to count you among our clients."],
+    "event": {"month": 9, "date": 14}
     }
   ]
 }
