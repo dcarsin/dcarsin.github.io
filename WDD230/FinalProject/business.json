@@ -7,7 +7,7 @@
 	  "pic": "ligaamerica",
 	  "motto": "@Ligamerica - Sporting ligue",
       "website": "http://www.ligaamerica.com.uy/",
-      "sort-description": "Liga America was created with the objective of promoting the practice of soccer in our community as a healthy activity in an environment of responsible competition, emphasizing Fair Play and respect for our rivals.",
+      "descriptionSort": "Liga America was created with the objective of promoting the practice of soccer in our community as a healthy activity in an environment of responsible competition, emphasizing Fair Play and respect for our rivals.",
       "description": [
         "It takes its name in honor of the champions of America in 2011 and all the heroes who made the light blue jersey the most winning jersey in our continent.",
         "Our commitment is to ensure a space for fun, social gathering and competitiveness so that those who choose us can enjoy the sport in all its splendor.",
@@ -21,7 +21,7 @@
 	  "pic": "italcar",
 	  "motto": "@italcaruy - Oil and Filter Change Service",
       "website": "https://www.facebook.com/italcaruy/",
-      "sort-description": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check."
+      "descriptionSort": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check."
     },
 	{
       "name": "Team Rentacar",
@@ -30,7 +30,7 @@
 	  "pic": "team",
 	  "motto": "Just choose the destination, we'll take care of the rest.",
       "website": "https://teamrentacar.com.uy/",
-      "sort-description": "A small business, 100% Uruguayan-owned company dedicated to the rental of vehicles without drivers.",
+      "descriptionSort": "A small business, 100% Uruguayan-owned company dedicated to the rental of vehicles without drivers.",
       "description": [ "DANOTIL S. A. was created at the beginning of 2008 from an idea of two friends who wanted to undertake a new commercial challenge. From that moment on, and changing ideas with our friends, the name TEAM RENT A CAR was born. Identifying ourselves since from our beginnings if something we wanted to form was a great team.",
 	  "As a typical Uruguayan company that is going to start a new activity in a very cautious way and with a lot of expectation we took the first step by buying our first 8 cars. With dedication and effort, firmly believing in our idea and team, we began to project ourselves into the future.",
 	  "We undertook an uninterrupted growth until today we have a fleet of more than 180 cars. Accompanying this growth we inaugurated a new commercial premises located in Parque Batlle with 580 m2 suitable for a better service and attention to our customers. We strive to give our vehicles the best maintenance for the safety and tranquility of our users. We have a wide network of workshops all over the country, being able to assure our customers a quick response and solution to their problems.",
@@ -43,7 +43,7 @@
 	  "pic": "zonamerica",
 	  "motto": "A company specialized in the creation of highly competitive business platforms.",
       "website": "https://web.zonamerica.com/",
-      "sort-description": "Zonamerica is a Business and Technology park in Uruguay operating under the Free Zone Law since 1990. In 2019, some 10,000 people in 350 companies work in 30 buildings in Zonamerica. The same year, there are more than 90,000 sq mt built areas, of which 88% are shared and rented areas. A global survey showed a 93% of satisfaction among the Zonamerica's companies",
+      "descriptionSort": "Zonamerica is a Business and Technology park in Uruguay operating under the Free Zone Law since 1990. In 2019, some 10,000 people in 350 companies work in 30 buildings in Zonamerica. The same year, there are more than 90,000 sq mt built areas, of which 88% are shared and rented areas. A global survey showed a 93% of satisfaction among the Zonamerica's companies",
       "description": [ "Our clients are in the world and our know-how is about business in the world. Therefore, we have expanded Zonamerica's horizons, investing in new operations in Colombia and China, with different models of insertion in those markets.",
 	  "In Colombia, we partnered with Grupo Carvajal, one of the most important business groups in that country, and in October 2018 we inaugurated the first Zonamerica Colombia building.",
 	  "In China, which has become Latin America's main trading partner, we opened a representative office in Foshan, developing a commercial bridge between the Asian giant and our continent.",
@@ -58,7 +58,7 @@
 	  "pic": "rural",
 	  "motto": "Constant development, seeking satisfaction and fulfillment: personal and professional.",
       "website": "https://www.expoprado.com/",
-      "sort-description": "La Rural del Prado is an agro-industrial exhibition organized by the Rural Association of Uruguay, held in September at the Rural del Prado, in the city of Montevideo.",
+      "descriptionSort": "La Rural del Prado is an agro-industrial exhibition organized by the Rural Association of Uruguay, held in September at the Rural del Prado, in the city of Montevideo.",
       "description": [ "We are already preparing the 116th edition of Expo Prado, the International International Livestock Livestock and Agro-Industrial Industrial and Commercial Show to be held will be held from September 10 to 19, 2021. September 10-19, 2021.",
 	  "It is the largest event in the country country, where the best genetics are exhibited genetics through the main breeders of main breeders of equine, bovine, ovine equine, bovine, ovine, goat, swine, and the most goats, pigs, and the most important and the most outstanding in poultry and rabbit breeding.",
 	  "It is the event that brings together the most significant of the agro-industrial and livestock agro-industrial and livestock and livestock sector, and where the most renowned companies.",
@@ -73,7 +73,7 @@
 	  "pic": "jacksonville",
 	  "motto": "Empowering talents, multiplying experiences.",
       "website": "http://www.ccj.edu.uy/",
-      "sort-description": "Empowering talents, multiplying experiences.",
+      "descriptionSort": "Empowering talents, multiplying experiences.",
       "description": [ "MISSION: To develop and promote training proposals and cultural activities that allow the application of new talents and skills to the requirements of the most prestigious and internationalized companies in the market.",
 	  "VISION: To be a local Foundation with an international outlook, which is highly linked to the demanding and prestigious labor market, knowing the training needs of the people who work in these companies and developing innovative programs, which allow bridging the gap between personal skills and those required by the job."
   ]
@@ -84,7 +84,7 @@
 	  "pic": "embassy",
 	  "motto": "Supporting and Promoting U.S. business in Uruguay",
       "website": "https://uy.usembassy.gov/business/",
-      "sort-description": "Supporting and promoting U.S. business in Uruguay is one of Embassy Montevideo’s highest priorities.",
+      "descriptionSort": "Supporting and promoting U.S. business in Uruguay is one of Embassy Montevideo’s highest priorities.",
       "description": [ "Uruguay is a growing economy situated in one of the more dynamic regions of South America. U.S. companies continue to take advantage of Uruguay’s favorable investment climate and its strong links with its neighbors in the South American Common Market (MERCOSUR), a region with high economic growth and a population of over 250 million people.",
 	  "The Economic and Commercial Section of the U.S. Embassy in Montevideo stands ready to assist your company or organization to explore this market, and we hope you find useful the many tools and links included in this website.",
 	  "Please feel free to contact us at any time using the contact information to the right.  Thank you."

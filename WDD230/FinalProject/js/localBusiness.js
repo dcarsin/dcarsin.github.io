@@ -7,9 +7,10 @@ fetch(url)
     .then((jsonData) => {
         console.log(jsonData);
         const biz = jsonData['business'];
-        const sortList = biz.filter((biz => biz.name == 'Soda Springs' || biz.name == 'Fish Haven' || biz.name == 'Preston'  ));
+        // const sortList = biz.filter((biz => biz.name == 'Soda Springs' || biz.name == 'Fish Haven' || biz.name == 'Preston'  ));
         // console.log(sortList);
-        sortList.forEach(oneBiz => {
+        biz.forEach(oneBiz => {
+            console.log(oneBiz);
             let div = document.createElement('div');
             let image = document.createElement('img');
             let section = document.createElement('section');
@@ -19,15 +20,15 @@ fetch(url)
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
             
-            image.setAttribute('src',`images/${oneBiz.pic}`);
+            image.setAttribute('src',`images/${oneBiz.pic}.png`);
             image.setAttribute('alt',`image for ${oneBiz.name}`);
             div.setAttribute('class', 'flyer');
             h3.textContent = `${oneBiz.name}`; 
             h4.textContent = `${oneBiz.motto}`;                
-            p1.textContent = `Year Founded: ${oneBiz.yearFounded}`;
-            p2.textContent = `Population: ${oneBiz.currentPopulation}`;
-            p3.textContent = `Annual Rain Fall: ${oneBiz.averageRainfall}`;
-            
+            p1.textContent = `Site Purpose: <br>${oneBiz.descriptionSort}`;
+            p2.textContent = `${oneBiz.description[0]}`;
+            p3.textContent = `${oneBiz.description[1]}`;
+
             div.appendChild(image);
             section.appendChild(h3);
             section.appendChild(h4);        
@@ -35,6 +36,7 @@ fetch(url)
             section.appendChild(p2);
             section.appendChild(p3);
             div.appendChild(section);
+            console.log(div);
             document.querySelector('#localBusiness').appendChild(div);
         }) 
     });
