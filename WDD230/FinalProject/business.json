@@ -12,7 +12,8 @@
         "It takes its name in honor of the champions of America in 2011 and all the heroes who made the light blue jersey the most winning jersey in our continent.",
         "Our commitment is to ensure a space for fun, social gathering and competitiveness so that those who choose us can enjoy the sport in all its splendor.",
 		"Liga América not only seeks to be a first class soccer tournament, but also a meeting place for family and friends.",
-        "In the country that has won the most championships in America, we play for the love of the jersey, that's "]
+        "In the country that has won the most championships in America, we play for the love of the jersey, that's "],
+        "event": {"month": 7, "date": 25}
     },
 	{
       "name": "Italcar uy",
@@ -21,7 +22,8 @@
 	  "pic": "italcar",
 	  "motto": "@italcaruy - Oil and Filter Change Service",
       "website": "https://www.facebook.com/italcaruy/",
-      "descriptionSort": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check."
+      "descriptionSort": "We are a company dedicated to the sale, fitting and balancing of tires and sport tires for vehicles. We also have sales and service of lubricants and filters change. Installation of batteries and alternator check.",
+      "event": {"month": 7, "date": 28}
     },
 	{
       "name": "Team Rentacar",

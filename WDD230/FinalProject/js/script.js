@@ -1,20 +1,20 @@
 
-
-
-"https://dcarsin.github.io/WDD230/FinalProject/business.json"
 //add day data into footer
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+console.log("now",now.getMonth());
+console.log("fulldate",fulldate.getMonth());
 
 document.querySelector('#footerData').innerHTML = `${fulldate} - &copy;`+ new Date().getFullYear() + ` David Carsin - Uruguay - <a href="https://www.byui.edu/online">BYU-Idaho Online
 Learning</a>`;
-if (now.getDay() == 5){
-    document.querySelector('aside').style.display = 'block';
-}
 
 function toggleMenu(){
     document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
 }
+
+
+"https://dcarsin.github.io/WDD230/FinalProject/business.json"
+
 
 let imageSources = [{src: 'images/palacioSunset.png', alt: 'Chamber of Commerce Main Building'},
 {src: 'images/palacioInside.jpg', alt: 'Chamber of Commerce Main Building inside'},

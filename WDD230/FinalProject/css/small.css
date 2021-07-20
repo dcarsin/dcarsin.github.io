@@ -21,7 +21,7 @@ body {
 /* header */
 header,
 main,
-footer {
+footer, h2 {
     text-align: center;
     padding: 10px;
     max-width: 960px;
@@ -103,12 +103,13 @@ nav {
     max-width: 960px;
     max-height: 330px;
 }
+
 img {
     width: 100%;
     height: auto;
 }
-  
-footer{    
+
+footer {
     font-weight: bold;
     background-color: var(--skyBlue);
 }
@@ -118,10 +119,12 @@ footer iframe {
     margin: auto;
     padding: 10px;
 }
+
 .footerDiv {
     padding: 10px;
 
 }
+
 .social img {
     max-width: 40px;
     margin: 0 8px;
@@ -133,20 +136,24 @@ footer iframe {
 }
 
 #localBusiness {
-    margin: 5px;
+    max-width: 960px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-  }
-  .flyer {
+}
+
+.flyer {
+    width: 300px;
     text-align: center;
     background-color: rgb(105, 157, 218);
     box-shadow: 8px 8px 8px #628ca6;
     border-radius: 20px;
     padding: 1rem;
     margin: 0.7rem;
-  }
-  
-  .flyer p {
-    line-height: 0;
-  }
-  
+}
+
+.flyer img {
+    margin: 0 auto;
+    max-height: 150px;
+    width: auto;
+}
