@@ -1,4 +1,7 @@
 
+
+
+"https://dcarsin.github.io/WDD230/FinalProject/business.json"
 //add day data into footer
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);

@@ -131,3 +131,22 @@ footer iframe {
     grid-column: 1/3;
     text-align: center;
 }
+
+#localBusiness {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .flyer {
+    text-align: center;
+    background-color: rgb(105, 157, 218);
+    box-shadow: 8px 8px 8px #628ca6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.7rem;
+  }
+  
+  .flyer p {
+    line-height: 0;
+  }
+  
