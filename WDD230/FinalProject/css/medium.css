@@ -42,12 +42,24 @@
 
   /**************** end navigation *****************/
 
+  .actualTemp {
+    margin-left: 80px;
+  }
+
+  .footerDiv {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .social {
     margin: 0 10px;
   }
-  
+  .localBusiness  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;  
+  }
+  /*   
   .alert {
     position: absolute;
-  }
+  } */
 
 }

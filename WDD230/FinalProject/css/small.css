@@ -2,7 +2,7 @@
     --gray: #6c757d;
     --skyBlue: rgb(105, 157, 218);
     --background: #ffffff;
-    --red:  #cf1717;
+    --red: #cf1717;
     --blue: #1761a0;
 }
 
@@ -94,30 +94,44 @@ nav {
     color: #000;
 } */
 
-#herodiv {
-    position: relative;
-}
-
-#herodiv img {
+.herodiv img {
     filter: blur(0px);
-    transition: filter 1s;
+    transition: filter 0.5s;
     max-width: 960px;
     max-height: 330px;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+/* .stats */
+.alert {    
+    top: 150px;
+    left: 100px;
+    background: radial-gradient(#eee, #aa4545);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: fit-content;
 }
 
 img {
     width: 100%;
     height: auto;
 }
-
-
-iframe {
-    padding: 5px;
-    margin: auto;
-    padding: 10px;
+.h5event {
+    font-weight: bold;
+    border: 1px solid var(--red);
 }
 
-#localBusiness {
+.localBusiness {
     max-width: 960px;
     margin: 0 auto;
     display: grid;
@@ -150,24 +164,22 @@ iframe {
     border: 1px solid var(--red);
 }
 
-  /* footer */
+/* footer */
 footer {
     margin: 0 auto;
     font-weight: bold;
     background-color: var(--skyBlue);
 }
 
-.grid {
-    grid-column: 2;
-}
-
 .footerDiv {
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
 }
 
 .social img {
     max-width: 40px;
-    margin: 0 8px;
+    margin: 0 10px;
 }
 
 #footerData {
@@ -175,76 +187,58 @@ footer {
     text-align: center;
 }
 
+iframe {
+    padding: 5px;
+    margin: auto;
+    padding: 10px;
+}
 
-/* .stats */
-.alert {
-    opacity: -1;
-    top: 150px;
-    left: 100px;
-    background: radial-gradient(#eee, #aa4545);
-    border: 1px solid #000;
-    padding: 1.5rem;
-    box-shadow: 0 0 30px #111;
-    max-width: 800px;
-    max-height: fit-content;
-  }
-  
-  .alert .heroData {
-    color: #334a6e;
-  }
 
-  button {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-  }
-  
-.alert:hover {
-    opacity: 100;
-  }
-  
 /* form */
 
 form button {
     margin-top: 2em;
-  }
-  
-  form .radiosBtn {
+}
+
+form .radiosBtn {
     display: inline-block;
     margin-left: 0.8em;
-  }
-  
-  form select {
+}
+
+form select {
     padding: 2px;
     width: 100%;
-  }
-  
-  form textarea, input, #stormDate {
+}
+
+form textarea,
+input,
+#stormDate {
     width: 100%;
-  }
-  
-  form #rating {
+}
+
+form #rating {
     width: 88%;
-  }
+}
 
 /* for weather */
 .grid-col {
     background-color: #e0e0e0;
     border: 1px solid #333;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     border-radius: 5px;
     padding: 15px;
-  }
-  
-  .grid img {
-    width: 64px;
-    display: block;
-  }
+}
 
-#footerMain{
+div.grid {
+    margin: 25px;
+}
+
+#WeatherMain {
+    font-weight: bold;
     display: grid;
     grid-template-columns: 1fr .4fr;
 }
+
 .actualTemp {
     background-color: #e0e0e0;
     border: 1px solid #333;
@@ -252,6 +246,28 @@ form button {
     padding: 15px;
 }
 
-.actualTemp img{
+div.actualTemp {
+    grid-column: 1fr;
+}
+
+.actualTemp img {
     max-width: 80px;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

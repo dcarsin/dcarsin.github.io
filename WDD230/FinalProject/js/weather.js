@@ -20,14 +20,10 @@ fetch(apiURL)
         processData(jsonData.daily[1], date, 'grid-col', jsonData.daily[1].temp.day.toFixed(1));
         date++
         processData(jsonData.daily[2], date, 'grid-col', jsonData.daily[2].temp.day.toFixed(1));
-
-
-        console.log(jsonData.current.alerts);        
-        // <h3>Weather ALERT!</h3>
-        // <h5>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.</h5>
-    
-        // if (jsonData.current.alerts) {
+     
+        if (jsonData.current.alerts) {
             let div = document.createElement('div');
+            div.setAttribute('class', 'alert');
             let button = document.createElement('button');
             button.setAttribute('aria-label', 'delete item');
             button.setAttribute('type', 'button');
@@ -37,20 +33,22 @@ fetch(apiURL)
             let h3 = document.createElement('h3');
             h3.append(`Weather ALERT !!!`);
             div.appendChild(h3);
-            // let message = jsonData.current.alerts[0].description;
-            let message = '...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.';
+            let message = jsonData.current.alerts[0].description;
+            //let message = '...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.';
             const parsed = message.split('\n');
             parsed.forEach(data => {
                 let p = document.createElement('p');
                 p.textContent = data;
                 div.appendChild(p);
             }); 
-            document.querySelector('.alert').appendChild(div);                    
-            document.querySelector('.alert').style.opacity = 1;
-        // }
+            console.log(div);
+            document.querySelector('#showAlert').appendChild(div);     
+        }
     });
 function closeMessage(){
-    document.querySelector('.alert').style.opacity = -1;
+    console.log("entro a borrar");
+    document.querySelector('#showAlert').innerHTML = "";
+    // document.querySelector('showAlert');    
 }
 
 function processData(oneDay, date, action, temp) {

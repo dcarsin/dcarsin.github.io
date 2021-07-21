@@ -11,9 +11,6 @@ function toggleMenu(){
 }
 
 
-"https://dcarsin.github.io/WDD230/FinalProject/business.json"
-
-
 let imageSources = [{src: 'images/palacioSunset.png', alt: 'Chamber of Commerce Main Building'},
 {src: 'images/palacioInside.jpg', alt: 'Chamber of Commerce Main Building inside'},
 {src: 'images/palacioSide.jpg', alt: 'Chamber of Commerce Main Building at Night'}];
@@ -25,12 +22,13 @@ setInterval(function () {
     if (i === imageSources.length) {
         i = 0;
     }
-    let active = document.querySelector('#herodiv');
-    document.querySelector('#herodiv').innerHTML = "";
+    let active = document.querySelector('.herodiv');
+    document.querySelector('.herodiv').innerHTML = "";
     let image = document.createElement('img');
     image.setAttribute('src', `${imageSources[i].src}`);
     // image.setAttribute('data-src', `${imageSources[i].src}`);
     image.setAttribute('alt', `${imageSources[i].alt}`);
+    
     active.appendChild(image);
     // document.getElementById('herodiv').innerHTML = active;
     i++;

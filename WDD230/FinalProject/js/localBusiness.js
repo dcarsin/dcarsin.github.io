@@ -31,7 +31,7 @@ fetch(url)
                 section.appendChild(p1);
                 div.appendChild(section);
                 // console.log(div);
-                document.querySelector('#localBusiness').appendChild(div);
+                document.querySelector('.localBusiness').appendChild(div);
             }
         })
     });

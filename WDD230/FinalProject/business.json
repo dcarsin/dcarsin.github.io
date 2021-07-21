@@ -2,6 +2,8 @@
   "business": [
     {
       "name": "Liga América Uruguay",
+      "contact": "Gerardo Escudero",
+      "phone": "+598 1234 5678",
       "address": "Route 8 Km 15.500",
       "zip": 91600,
 	  "pic": "ligaamerica",
@@ -17,6 +19,8 @@
     },
 	{
       "name": "Italcar uy",
+      "contact": "Sebastian Duva",
+      "phone": "+598 9012 3456",
       "address": "Av. José Belloni 4892",
       "zip": 13000,
 	  "pic": "italcar",
@@ -26,6 +30,8 @@
       "event": {"month": 11, "date": 28}
     },{
       "name": "Embassy of the United States",
+      "contact": "Ethel Rozas",
+      "phone": "+598 7890 1234",
       "address": "Dr. Lauro Müller 1776",
       "zip": 11200,
 	  "pic": "embassy",
@@ -39,6 +45,8 @@
   "event": {"month": 7, "date": 31}
     },{
       "name": "Zonamerica",
+      "contact": "Luis Azevedo",
+      "phone": "+598 5678 9012",
       "address": "Route 8 Km 17.200",
       "zip": 91600,
 	  "pic": "zonamerica",
@@ -55,6 +63,8 @@
     "event": {"month": 7, "date": 27}
     },{
       "name": "Rural del Prado",
+      "contact": "Marcos Brangado",
+      "phone": "+598 3456 7890",
       "address": "Av. Lucas Obes 1010",
       "zip": 11700,
 	  "pic": "rural",
@@ -71,6 +81,8 @@
   "event": {"month": 10, "date": 7}
     },{
       "name": "CCJ",
+      "contact": "JP Fournier",
+      "phone": "+598 1234 5678",
       "address": "Route 8 Km 17.000",
       "zip": 12200,
 	  "pic": "jacksonville",
@@ -83,6 +95,8 @@
   "event": {"month": 9, "date": 1}
     },{
       "name": "Team Rentacar",
+      "contact": "Maximiliano Perdomo",
+      "phone": "+598 9123 4567",
       "address": "Luis Sambucetti 2668",
       "zip": 11600,
 	  "pic": "team",

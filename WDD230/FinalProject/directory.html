@@ -15,13 +15,11 @@
     <link rel="shortcut icon" href="favicon.ico">
     <script defer src="js/script.js"></script>
     <script defer src="js/lazyLoad.js"></script>
-    <script defer src="js/weather.js"></script>
-    <script defer src="js/localBusiness.js"></script>
+    <script defer src="js/directory.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <picture class="mainLogo">
             <img src="images/chamberMVD.png" alt="Chamber of Montevideo Logo">
@@ -31,9 +29,9 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="montevideo.html">Montevideo</a></li>
-                    <li><a href="directory.html">Directory</a></li>
+                    <li><a class="active" href="#">Directory</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -41,29 +39,7 @@
         </section>
     </header>
     <main>
-        <section id="showAlert"></section>
-        <div class="herodiv">
-            
-            <img src="images/loading.jpg" data-src="images/palacioSunset.png" alt="Chamber of Commerce Main Building">
-        </div>
-        <h2>The purpose of this site, is to help community to develop and connect with other business to grow and
-            provide
-            accountable services by developing a unique networks of commerce that will strengthen both parties.</h2>
-        <div id="localEvent">
-            <section>
-                <h3>Upcoming Events</h3>
-                <hr>
-                <p id="event1"></p>
-                <p id="event2"></p>
-                <p id="event3"></p>
-            </section>
-        </div>
         <div class="localBusiness"></div>
-
-        <div id="WeatherMain">
-            <section class="actualTemp">Weather for Today</section>
-            <div class="grid"></div>
-        </div>
     </main>
 
     <footer>
@@ -87,7 +63,6 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
-
 </body>
 
 </html>
