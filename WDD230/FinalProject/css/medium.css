@@ -45,16 +45,9 @@
   .social {
     margin: 0 10px;
   }
-
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  
+  .alert {
+    position: absolute;
   }
 
-  .flyer {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }

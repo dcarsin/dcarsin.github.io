@@ -15,11 +15,13 @@
     <link rel="shortcut icon" href="favicon.ico">
     <script defer src="js/script.js"></script>
     <script defer src="js/lazyLoad.js"></script>
-<script defer src="js/localBusiness.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/localBusiness.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <picture class="mainLogo">
             <img src="images/chamberMVD.png" alt="Chamber of Montevideo Logo">
@@ -40,26 +42,31 @@
     </header>
     <main>
         <div id="herodiv">
+            <section class="alert"></section>
             <img src="images/loading.jpg" data-src="images/palacioSunset.png" alt="Chamber of Commerce Main Building">
         </div>
-    </main>
-    <h2>The purpose of this site, is to help community to develop and connect with other business to grow and provide accountable services by developing a unique networks of commerce that will strengthen both parties.</h2>
-    <div id="localBusiness"></div>
+        <h2>The purpose of this site, is to help community to develop and connect with other business to grow and
+            provide
+            accountable services by developing a unique networks of commerce that will strengthen both parties.</h2>
+        <div id="localEvent">
+            <section>
+                <h3>Upcoming Events</h3>
+                <hr>
+                <p id="event1"></p>
+                <p id="event2"></p>
+                <p id="event3"></p>
+            </section>
+        </div>
+        <div id="localBusiness"></div>
 
-    <div id="localEvent">
-        <section>
-            <h3>Upcoming Events this Month</h3>
-            <hr>
-            <p id="event1"></p>
-            <p id="event2"></p>
-            <p id="event3"></p>
-        </section>
-    </div>
+        <div id="footerMain">
+            <section class="actualTemp">Weather for Today</section>
+            <div class="grid"></div>
+            </div>
+    </main>
 
     <footer>
-        <iframe src="https://maps.google.com/maps?q=palacio%20legislativo&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="250" height="250" style="border:0;" loading="lazy"></iframe>
-        <div class="footerDiv">
+         <div class="footerDiv">
             <div class="social">
                 <a href="https://www.facebook.com/"><img src="images/Facebook_icon.png" alt="facebook icon"></a>
                 <a href="https://www.twitter.com/"><img src="images/Twitter.png" alt="twitter icon"></a>
@@ -79,3 +86,7 @@
 </body>
 
 </html>
+
+<!-- <iframe src="https://maps.google.com/maps?q=palacio%20legislativo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="250" height="250" style="border:0;" loading="lazy"></iframe>
+        -->
