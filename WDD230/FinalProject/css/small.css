@@ -109,8 +109,9 @@ nav {
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
+
 /* .stats */
-.alert {    
+.alert {
     top: 150px;
     left: 100px;
     background: radial-gradient(#eee, #aa4545);
@@ -126,6 +127,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .h5event {
     font-weight: bold;
     border: 1px solid var(--red);
@@ -138,8 +140,16 @@ img {
     grid-template-columns: 1fr;
 }
 
+.flyer a {
+    font-weight: bold;
+}
+
 .flyer {
-    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 960px;
     text-align: center;
     background-color: rgb(105, 157, 218);
     box-shadow: 8px 8px 8px #628ca6;
@@ -172,8 +182,6 @@ footer {
 }
 
 .footerDiv {
-    display: grid;
-    grid-template-columns: 1fr;
     margin: 10px;
 }
 
@@ -193,18 +201,6 @@ iframe {
     padding: 10px;
 }
 
-
-/* form */
-
-form button {
-    margin-top: 2em;
-}
-
-form .radiosBtn {
-    display: inline-block;
-    margin-left: 0.8em;
-}
-
 form select {
     padding: 2px;
     width: 100%;
@@ -215,10 +211,29 @@ input,
 #stormDate {
     width: 100%;
 }
+.resource {
+    margin: 0 auto;
+}
 
+.button {
+    border-width: 1px;
+    height: 35px;
+    border-radius: 4px;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(105, 157, 218);
+  }
+  
+.formCentered {
+    display: inline-block;
+}
+/* 
 form #rating {
     width: 88%;
-}
+} */
 
 /* for weather */
 .grid-col {
@@ -239,6 +254,7 @@ div.grid {
     grid-template-columns: 1fr .4fr;
 }
 
+
 .actualTemp {
     background-color: #e0e0e0;
     border: 1px solid #333;
@@ -246,13 +262,15 @@ div.grid {
     padding: 15px;
 }
 
-div.actualTemp {
-    grid-column: 1fr;
-}
 
 .actualTemp img {
     max-width: 80px;
 }
+
+.icone{
+    width: 0px;
+    opacity: -1;
+  }
 
 @keyframes cf3FadeInOut {
     0% {

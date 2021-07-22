@@ -14,6 +14,8 @@ fetch(url)
             let section = document.createElement('section');
             let h3 = document.createElement('h3'); //name
             let h4 = document.createElement('h4'); //motto
+            let contact = document.createElement('h4'); //motto
+            let phone = document.createElement('h4'); //motto
             let h5 = document.createElement('h5'); //address
             let image = document.createElement('img'); //image
             let a = document.createElement('a'); //website
@@ -22,6 +24,8 @@ fetch(url)
             image.setAttribute('src', `images/${oneBiz.pic}.png`);
             image.setAttribute('alt', `image for ${oneBiz.name}`);
             h3.textContent = `${oneBiz.name}`;
+            contact.textContent = `Contact: ${oneBiz.contact}`;
+            phone.textContent = `Phone ${oneBiz.phone}`;
             h4.textContent = `${oneBiz.motto}`;
             a.setAttribute('href', `${oneBiz.website}`)
             a.textContent = `${oneBiz.website}`;
@@ -30,6 +34,8 @@ fetch(url)
             div.appendChild(image);
             section.appendChild(h3);
             section.appendChild(h4);
+            section.appendChild(contact);
+            section.appendChild(phone);
             section.appendChild(a);
             section.appendChild(h5);
             section.appendChild(p1);
@@ -45,3 +51,17 @@ fetch(url)
             document.querySelector('.localBusiness').appendChild(div);
         })
     });
+
+    function galleryView(){
+        let localBusiness = document.getElementById('grid3');
+        localBusiness.classList.remove("localBusiness2");
+        localBusiness.classList.add("localBusiness");
+
+    }
+
+    function listView(){
+        let localBusiness = document.getElementById('grid3');
+        localBusiness.classList.remove("localBusiness");
+        localBusiness.classList.add("localBusiness2");
+
+    }

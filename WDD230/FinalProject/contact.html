@@ -31,26 +31,32 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="montevideo.html">Montevideo</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a class="active" href="#">Contact Us</a></li>
                 </ul>
             </nav>
 
         </section>
     </header>
     <main>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.605477171585!2d-56.189410785541845!3d-34.891251980386016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f803bdc1bbe2d%3A0xb0d04a4df8083883!2sPalacio%20Legislativo%20del%20Uruguay%2C%20Av.%20de%20las%20Leyes%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1626931725178!5m2!1ses-419!2suy"
+            width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <hr>
+        <h1>List of Directors:</h1>
+        <h2>Nephi Perez</h2>
+        <h3>Penelope Boavina</h3>
+        <h3>David Carsin</h3>
+        <hr>
+        <br>
         <form class="formCentered" action="thanks.html">
             <table>
                 <tr>
                     <td><label for="name">First Name:</label></td>
-                    <td><input type="text" id="name" required></td>
+                    <td><input type="text" id="name"></td>
                 </tr>
                 <tr>
-                    <td><label for="lastName">Last Name:</label></td>
-                    <td><input type="text" id="lastName" required></td>
-                </tr>
-                <tr>
-                    <td><label for="title">Title:</label></td>
-                    <td><input type="text" id="title"></td>
+                    <td><label for="phone">Cell phone:</label></td>
+                    <td><input type="tel" name="phone" id="phone" required></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email:</label></td>
@@ -58,34 +64,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="phone">Cell phone:</label></td>
-                    <td><input type="tel" name="phone" id="phone"></td>
-                </tr>
-                <tr>
-                    <td><label for="bizName">Business Name:</label></td>
-                    <td><input type="text" id="bizName" required></td>
-                </tr>
-                <tr>
-                    <td><label for="bizAddress">Business address:</label></td>
-                    <td><input type="text" id="bizAddress"></td>
-                </tr>
-                <tr>
-                    <td><label for="bizWeb">Business website:</label></td>
-                    <td><input type="text" id="bizWeb"></td>
-                </tr>
-                <tr>
-                    <td><label for="bizDescription">Business description:</label></td>
-                    <td><textarea name="bizDescription" id="bizDescription" cols="50" rows="5"></textarea>
-                </tr>
-                <tr>
-                    <td><label for="stormRegion">Seleccione Pais:</label></td>
-                    <td><select name="stormRegion" id="stormRegion">
-                            <option hidden>Select...</option>
-                            <option>Non-profit ($100)</option>
-                            <option>Bronze ($200)</option>
-                            <option>Silver ($400)</option>
-                            <option>Gold ($1000)</option>
-                        </select></td>
+                    <td><label for="comment">Comments:</label></td>
+                    <td><textarea name="comment" id="comment" cols="50" rows="5" required></textarea>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -109,7 +89,6 @@
                     <strong>Phone:</strong> +598 9204 0000<br>
                     <strong>Email:</strong><a href="mailto:info@mvdcoc.uy">info@mvdcoc.uy</a>
                 </p>
-                <a href="resource.html">resource/attribution page</a>
             </div>
         </div>
         <div id="footerData"></div>

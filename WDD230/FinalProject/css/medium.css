@@ -53,13 +53,24 @@
   .social {
     margin: 0 10px;
   }
-  .localBusiness  {
+
+  .localBusiness {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;  
+    grid-template-columns: 1fr 1fr;
   }
-  /*   
-  .alert {
-    position: absolute;
-  } */
+
+  .localBusiness2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .icone {
+    opacity: 1;
+    width: 40px;
+  }
+
+  /* 
+display: grid;
+grid-template-columns: 1fr; */
 
 }

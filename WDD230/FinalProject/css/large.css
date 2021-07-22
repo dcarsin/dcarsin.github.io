@@ -19,8 +19,7 @@ header {
     /*************** start navigation ****************/
     .navigation {
       display: flex;
-    }
-  
+    }  
   
     .navigation li {
       display: block;
@@ -36,10 +35,10 @@ header {
     }
     /**************** end navigation *****************/
 
-
-.flyer {
-  grid-template-columns: 1fr;
-}
-    
+    .localBusiness {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+     
   }
   
