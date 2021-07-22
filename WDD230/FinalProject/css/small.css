@@ -271,7 +271,10 @@ div.grid {
     width: 0px;
     opacity: -1;
   }
-
+  
+.toHide{
+    display: none;
+}
 @keyframes cf3FadeInOut {
     0% {
         opacity: 1;
