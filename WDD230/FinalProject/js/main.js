@@ -1,7 +1,7 @@
-let imageSources = [{src: '/images/palacio1.jpg', alt: 'Chamber of Commerce Main Building'},
-{src: '/images/palacio2.jpg', alt: 'Chamber of Commerce Main Building'},
-{src: '/images/palacio3.jpg', alt: 'Chamber of Commerce Main Building'},
-{src: '/images/palacio4.jpg', alt: 'Chamber of Commerce Main Building'}];
+let imageSources = [{src: 'images/palacio1.jpg', alt: 'Chamber of Commerce Main Building'},
+{src: 'images/palacio2.jpg', alt: 'Chamber of Commerce Main Building'},
+{src: 'images/palacio3.jpg', alt: 'Chamber of Commerce Main Building'},
+{src: 'images/palacio4.jpg', alt: 'Chamber of Commerce Main Building'}];
 
 let join = ['images/join.png','images/join2.png'];
             
